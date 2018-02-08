@@ -1,0 +1,118 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	border: 0;
+	background: #3A65C4FF;
+	color: #fff;
+	padding: 0.1% 0;
+	font-size: 1.2em;
+}
+
+.navbar-brand {
+	float: left;
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+	color: #fff;
+	background: #3A65C4FF;
+}
+
+.navbar-inverse .navbar-nav li a {
+	color: #D5D5D5;
+}
+
+#about {
+	/*margin-top: 100px;*/
+	height: 700px;
+}
+
+#intro {
+	margin-top: 150px;
+}
+#item1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(tom-coe-426084.jpg) no-repeat center center fixed;
+	height: 500px;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-size: cover;
+}
+
+#item2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(more-coming.png) no-repeat center center;
+	height: 500px;
+}
+
+.center-block {
+	
+	width: 35%;
+	margin-top: 120px;
+}
+
+figcaption {
+	color: #fff;
+	font-size: 16px;
+}
+.carousel-caption {
+	top: 30%;
+	transform: translateY(-50%);
+	text-transform: uppercase;
+}
+
+#icon {
+	max-width: 200px;
+	margin: 1% auto;
+}
+
+.container {
+	margin: 4% auto;
+}
+
+footer {
+	width: 100%;
+	background-color: #3A65C4FF;
+	padding: 5%;
+	color: #fff; 
+}
+
+.fa {
+	padding: 15px;
+	font-size: 30px;
+	color: #fff;
+}
+
+.fa:hover {
+	color: #D5D5D5;
+	text-decoration: none;
+}
+
+#nameBox {
+ 	margin: 80px auto;
+	width: 160px;
+	height: 150px;
+	border: 1px solid #3A65C4FF;
+}
+
+
+
+#initials {
+	
+	text-transform: uppercase;
+	font-size: 80px;
+	margin-top: 5px;
+
+}
+
+#hobby {
+	margin-top: -10px;
+	font-size: 15px;
+}
+
+#email {
+	margin: 15px 0px 15px 0px;
+}
