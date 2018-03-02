@@ -1,6 +1,3 @@
-body {
-}
-
 #main {
 	font: 20px "Open Sans", Helvetica, sans-serif; 
 	color: #fff;
@@ -8,8 +5,6 @@ body {
 	background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("garrhet-sampson-178990-unsplash.jpg");
 	height: 100vh; 
 }
-
-
 
 #nameBox {
 	position: absolute;
@@ -47,5 +42,4 @@ h1
 
 a {
 	color: #fff;
-
 }
