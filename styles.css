@@ -45,7 +45,7 @@ body, html {
 	justify-content: center;
 	color: #fff;
 	background-size: cover;
-	background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("garrhet-sampson-178990-unsplash.jpg");
+	background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("https://github.com/ChrisPetalotis/ChrisPetalotis.github.io/blob/master/garrhet-sampson-178990-unsplash.jpg?raw=true");
 	top: 0;
 	height: 100vh;
 	/*padding-top: 25vh;*/
