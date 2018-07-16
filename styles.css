@@ -44,7 +44,7 @@ body, html {
 	justify-content: center;
 	color: #fff;
 	background-size: cover;
-	background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4) ), url("masaaki-komori-738833-unsplash.jpg");
+	background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4) ), url("ChrisPetalotis.github.io/masaaki-komori-738833-unsplash.jpg");
 	top: 0;
 	height: 100vh;
 	text-align: center;
@@ -55,12 +55,10 @@ body, html {
 	height: 190px;
 	border: 2px solid #3A65C4FF;
 }
-
 #main #initials {
 	font-size: 90px;
 	margin-top: 25px;
 }
-
 #main #hobby {
 	margin-top: 15px;
 	/*font-size: 25px;*/
