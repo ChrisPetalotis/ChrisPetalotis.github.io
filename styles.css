@@ -2,17 +2,19 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font-family: 'Quicksand', sans-serif;
+	border: 0;
 }
 
-#navbar {
+header {
 	position: fixed;
+	z-index: 2;
 	width: 100%;
 	height: 80px;
 	margin: 0;
 	font-size: 20px;
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
 }
-#navbar ul {
+header ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -22,15 +24,17 @@ body, html {
 	margin-right: 45px;
 	list-style: none;
 }
-#navbar li {
+header li {
 	margin-right: 65px;
 }
-
-#navbar a {
+header li:focus {
+    border-bottom: 2px solid #3A65C4FF;
+}
+header a {
 	text-decoration: none;
 	color: #fff;
 }
-#navbar #name {
+header #name {
 	position: relative;
 	top: 29px;
 	left: 18px;
@@ -44,8 +48,9 @@ body, html {
 	justify-content: center;
 	color: #fff;
 	background-size: cover;
-	background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4) ), url("https://github.com/ChrisPetalotis/ChrisPetalotis.github.io/blob/master/masaaki-komori-738833-unsplash.jpg?raw=true");
-`	top: 0;
+	background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4) ), url("masaaki-komori-738833-unsplash.jpg");
+	/*background-attachment: fixed;*/
+	top: 0;
 	height: 100vh;
 	text-align: center;
 }
@@ -70,6 +75,60 @@ body, html {
 	font-size: 22px;
 }
 
+footer {
+	border-top: 2px #D5D5D5 solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #3A65C4FF;
+	padding: 5%;
+	color: #fff;
+	top: 0;
+	bottom: 0;
+	height: 79vh;
+}
+footer #email, footer #connect {
+	/*position: relative;*/
+	text-align: center;
+	/*width: 50vw;*/
+}
+footer h3 {
+	font-size: 2em;
+}
+/*footer #email {
+	right: 30px;
+}*/
+footer #connect {
+	margin-top: 150px;
+	left: 30px;
+}
+footer .fa {
+	padding: 15px;
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+footer .fa:hover {
+	color: #D5D5D5;
+}
+#email h3 {
+	margin-bottom: 40px;
+}
+
+#email-adress {
+	margin: 15px 0px;
+}
+
+header li:hover {
+    background: none;
+    border-bottom: 2px solid #3A65C4FF;
+}
+header li {
+    -webkit-transition: border .2s;
+    transition: border .2s;
+}
+
 /*#projects {
 	display: flex;
 	justify-content: space-around;
@@ -90,42 +149,6 @@ body, html {
 	font-size: 19px;
 }
 */
-footer {
-	/*height: 175px;*/
-	border-top: 2px #D5D5D5 solid;
-	display: flex;
-	background-color: #3A65C4FF;
-	padding: 5%;
-	color: #fff;
-}
-footer #email, footer #connect {
-	position: relative;
-	text-align: center;
-	width: 50vw;
-}
-footer #email {
-	right: 30px;
-}
-footer #connect {
-	top: 10px;
-	left: 30px;
-}
-footer .fa {
-	padding: 15px;
-	font-size: 30px;
-	color: #fff;
-	text-decoration: none;
-}
-footer .fa:hover {
-	color: #D5D5D5;
-}
-#email h3 {
-	margin-bottom: 40px;
-}
-
-#email-adress {
-	margin: 15px 0px;
-}
 
 /*header h2 {*/
 	/*border-top: 1px #C1C1C180 solid;*/
