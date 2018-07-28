@@ -3,6 +3,7 @@ body, html {
 	padding: 0;
 	font-family: 'Quicksand', sans-serif;
 	border: 0;
+	top: 0;
 }
 
 header {
@@ -23,12 +24,11 @@ header ul {
 	height: 100%;
 	margin-right: 45px;
 	list-style: none;
+	/*overflow-y:auto;
+  	overflow-x:hidden;*/
 }
-header li {
+header a {
 	margin-right: 65px;
-}
-header li:focus {
-    border-bottom: 2px solid #3A65C4FF;
 }
 header a {
 	text-decoration: none;
@@ -120,7 +120,7 @@ footer .fa:hover {
 	margin: 15px 0px;
 }
 
-header li:hover {
+header ul a:hover {
     background: none;
     border-bottom: 2px solid #3A65C4FF;
 }
@@ -155,3 +155,64 @@ header li {
 	/*padding: 40px 0 20px 40px;
 	font-size: 27px;
 }*/
+
+@media (min-width: 1550px) {
+	footer {
+		height: 90vh;
+	}
+}
+
+@media (max-width: 800px) {
+	footer {
+		height: 100vh;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	    /*background: none;*/
+		top: 0;
+		padding: 0;
+		width: 100%;
+		height: 80px;
+		border: none;
+	}
+	header ul {
+		z-index: 2;
+		/*height: 100%;*/
+		width: 100vw;
+		/*flex-direction: column;*/
+		justify-content: space-around;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+	header #name {
+		display: block;
+		z-index: 1;
+		height: 0;
+		width: 0;
+		bottom: 60px;
+		font-size: 1px;
+		cursor: none;
+		color: transparent;
+	}
+	header #navbar a {
+		border-bottom: 1px solid #3A65C4FF;
+		border-right: 1px solid #3A65C4FF;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		top: 0;
+	}
+	header ul a:hover {
+		border: none;
+		color:  #3A65C4FF;
+		background-color: #EEE;
+	}
+}
