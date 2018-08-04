@@ -75,6 +75,33 @@ header #name {
 	font-size: 22px;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #D5D5D5;
+  cursor: pointer;
+  padding: 15px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+#myBtn:hover {
+	color: #fff;
+}
+#myBtn .fa {
+	color: #3A65C4FF;
+	position: relative;
+	bottom: 25px;
+	right: 19px;
+}
+
 footer {
 	border-top: 2px #D5D5D5 solid;
 	display: flex;
@@ -128,33 +155,6 @@ header li {
     -webkit-transition: border .2s;
     transition: border .2s;
 }
-
-/*#projects {
-	display: flex;
-	justify-content: space-around;
-	height: 70vh;
-	min-height: 400px;
-}
-.project-tile a {
-	text-decoration: none;
-	color: #000;
-}
-.project-tile img {
-	width: 400px;
-	height: 300px;
-}
-.project-tile figcaption{
-	margin: 20px;
-	text-align: center;
-	font-size: 19px;
-}
-*/
-
-/*header h2 {*/
-	/*border-top: 1px #C1C1C180 solid;*/
-	/*padding: 40px 0 20px 40px;
-	font-size: 27px;
-}*/
 
 @media (min-width: 1550px) {
 	footer {
