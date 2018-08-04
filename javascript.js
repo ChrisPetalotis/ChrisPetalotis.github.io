@@ -41,9 +41,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
-        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("arrow-to-top").style.display = "block";
     } else {
-        document.getElementById("myBtn").style.display = "none";
+        document.getElementById("arrow-to-top").style.display = "none";
     }
 }
 
