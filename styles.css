@@ -75,7 +75,7 @@ header #name {
 	font-size: 22px;
 }
 
-#myBtn {
+#arrow-to-top {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -92,10 +92,10 @@ header #name {
   border-radius: 50%;
   opacity: 0.5;
 }
-#myBtn:hover {
+#arrow-to-top:hover {
 	color: #fff;
 }
-#myBtn .fa {
+#arrow-to-top .fa {
 	color: #3A65C4FF;
 	position: relative;
 	bottom: 25px;
