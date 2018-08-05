@@ -14,6 +14,7 @@ header {
 	margin: 0;
 	font-size: 20px;
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+	transition: background 0.5s;
 }
 header ul {
 	display: flex;
@@ -29,8 +30,7 @@ header ul {
 }
 header a {
 	margin-right: 65px;
-}
-header a {
+	/*margin-bottom: 20px;*/
 	text-decoration: none;
 	color: #fff;
 }
@@ -48,7 +48,7 @@ header #name {
 	justify-content: center;
 	color: #fff;
 	background-size: cover;
-	background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4) ), url("ezgif.com-gif-maker.webp");
+	background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4) ), url("masaaki-komori-738833-unsplash.jpg");
 	/*background-attachment: fixed;*/
 	top: 0;
 	height: 100vh;
@@ -76,7 +76,7 @@ header #name {
 }
 
 #about-me {
-	height: 70vh;
+	min-height: 70vh;
 	font-size: 22px;
 	border-top: 1px solid #D5D5D5;
 }
@@ -207,14 +207,7 @@ header li {
 		padding: 0;
 	}
 	header #name {
-		display: block;
-		z-index: 1;
-		height: 0;
-		width: 0;
-		bottom: 60px;
-		font-size: 1px;
-		cursor: none;
-		color: transparent;
+		display: none;
 	}
 	header ul a {
 		/*border-bottom: 1px solid #3A65C4FF;*/
