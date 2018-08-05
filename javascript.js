@@ -40,9 +40,22 @@ $('a[href*="#"]')
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+    const header = document.querySelector('header');
+    const ul  = document.querySelector('ul');
+    
     if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
         document.getElementById("arrow-to-top").style.display = "block";
+        ul.style.marginTop = '7px';
+        document.getElementById('name').style.top = '20px';
+        header.style.height = '60px';
+        ul.style.lineHeight = '0px';
+        header.style.background = '#222222';
     } else {
+        ul.style.marginTop = '0px';
+        document.getElementById('name').style.top = '29px';
+        document.querySelector('ul').style.lineHeight = 'initial';
+        header.style.background = 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2))';
+        header.style.height = '80px';
         document.getElementById("arrow-to-top").style.display = "none";
     }
 }
@@ -54,3 +67,16 @@ function topFunction() {
   		scrollTop: 0
 	}, 1000);
 }
+
+var x = window.matchMedia("(max-width: 600px)");
+
+function changeTop (x) {
+    if (x.matches && (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120)) { // If media query matches
+        document.querySelectorAll('li').forEach(li => li.style.marginTop= "33px");
+    } else {
+        document.querySelectorAll('li').forEach(li => li.style.marginTop= "0px");
+    }
+}
+
+changeTop(x); // Call listener function at run time
+x.addListener(changeTop); // Attach listener function on state changes
