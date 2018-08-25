@@ -1,3 +1,4 @@
+// When clicking on a navbar link it goes to the corresponding part of the website
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -37,26 +38,31 @@ $('a[href*="#"]')
   });
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.addEventListener('scroll', scrollFunction);
 
 function scrollFunction() {
     const header = document.querySelector('header');
     const ul  = document.querySelector('ul');
     
-    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         document.getElementById("arrow-to-top").style.display = "block";
+
+    } else {
+        document.getElementById("arrow-to-top").style.display = "none";
+    }
+    
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         ul.style.marginTop = '7px';
         document.getElementById('name').style.top = '20px';
         header.style.height = '60px';
         ul.style.lineHeight = '0px';
         header.style.background = '#222222';
-    } else {
+      } else {
         ul.style.marginTop = '0px';
         document.getElementById('name').style.top = '29px';
         document.querySelector('ul').style.lineHeight = 'initial';
         header.style.background = 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2))';
         header.style.height = '80px';
-        document.getElementById("arrow-to-top").style.display = "none";
     }
 }
 
@@ -70,8 +76,8 @@ function topFunction() {
 
 var x = window.matchMedia("(max-width: 600px)");
 
-function changeTop (x) {
-    if (x.matches && (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120)) { // If media query matches
+function changeTop (mediaWidth) {
+    if (mediaWidth.matches && (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120)) { // If media query matches
         document.querySelectorAll('li').forEach(li => li.style.marginTop= "33px");
     } else {
         document.querySelectorAll('li').forEach(li => li.style.marginTop= "0px");
