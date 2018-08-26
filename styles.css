@@ -1,20 +1,21 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Open Sans', 'Quicksand', sans-serif;
 	border: 0;
 	top: 0;
 }
 
 header {
-	position: fixed;
+	/*position: fixed;*/
 	z-index: 2;
 	width: 100%;
-	height: 80px;
+	/*height: 80px;*/
 	margin: 0;
 	font-size: 20px;
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+	/*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));*/
 	transition: background 0.5s;
+	transition-timing-function: ease-in;
 }
 header ul {
 	display: flex;
@@ -22,7 +23,7 @@ header ul {
 	align-items: center;
 	margin-top: 0;
 	float: right;
-	height: 100%;
+	/*height: 100%;*/
 	margin-right: 45px;
 	list-style: none;
 	/*overflow-y:auto;
@@ -34,47 +35,54 @@ header a {
 	text-decoration: none;
 	color: #fff;
 }
-header #name {
-	position: relative;
-	top: 29px;
-	left: 18px;
-	font-size: 20px;
-}
-
+/* MAIN */
 #main {
+	color: #fff;
+	 background-position: center;
+	background-size: cover;
+	background-image:linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4) ), url("blake-connally-373084-unsplash.jpg");
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: #fff;
-	background-size: cover;
-	background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4) ), url("ezgif.com-gif-maker.webp");
-	/*background-attachment: fixed;*/
 	top: 0;
-	height: 100vh;
 	text-align: center;
+	
 }
-#main #nameBox {
- 	margin: 20px auto;
-	width: 200px;
-	height: 190px;
-	border: 2px solid #3A65C4FF;
+#main-text {
+	text-transform: uppercase;
 }
 
-#main #initials {
-	font-size: 90px;
-	margin-top: 25px;
+.intro {
+	font-weight: 550;
+	font-size: 25px;
+	margin-bottom: 50px;
 }
 
-#main #hobby {
-	margin-top: 15px;
-	/*font-size: 25px;*/
-}
-#main .details {
-	/*margin-top: 140px;*/
-	font-size: 22px;
+.intro div {
+	font-weight: 600;
+	font-size: 65px;
 }
 
+#main-text button {
+	background-color: rgb(79, 117, 201);
+	padding: 12px 32px;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 17px;
+	cursor: pointer;
+}
+#main-text button:hover {
+	background-color: rgba(79, 117, 201, 0.9);
+}
+#main-text .details {
+	font-size: 23px;
+	font-weight: 550;
+}
+
+/* ABOUT-ME */
 #about-me {
 	min-height: 70vh;
 	font-size: 22px;
@@ -86,10 +94,7 @@ header #name {
 	padding: 120px;
 	margin: auto;
 	line-height: 2em;
-	vertical-align: center;
-}
-#about-me-text strong{
-	font-size: 25px;
+	align-self: center;
 }
 
 footer {
@@ -103,19 +108,14 @@ footer {
 	color: #fff;
 	top: 0;
 	bottom: 0;
-	height: 79vh;
+	min-height: 79vh;
 }
 footer #email, footer #connect {
-	/*position: relative;*/
 	text-align: center;
-	/*width: 50vw;*/
 }
 footer h3 {
 	font-size: 2em;
 }
-/*footer #email {
-	right: 30px;
-}*/
 footer #connect {
 	margin-top: 150px;
 	left: 30px;
@@ -147,30 +147,40 @@ header li {
 }
 
 #arrow-to-top {
-  display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #D5D5D5;
-  cursor: pointer;
-  padding: 15px;
-  height: 40px;
-  width: 40px;
+  width: 3.41428571em;
+  height: 3.41428571em;
+  background: #fff;
   border-radius: 50%;
-  opacity: 0.5;
-}
-#arrow-to-top:hover {
-	color: #fff;
+  text-align: center;
+  right: 1.85714286em;
+  bottom: 3.71428571em;
+  padding-top: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
+  z-index: 99;
+  border: 1px solid #ececec;
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  outline: none;
 }
 #arrow-to-top .fa {
 	color: #3A65C4FF;
 	position: relative;
-	bottom: 25px;
-	right: 19px;
+	bottom: 20px;
+	right: 9px;
+}
+#arrow-to-top:not(.active) {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  -webkit-transform: translate3d(0, 20px, 0);
+  pointer-events: none;
+}
+#arrow-to-top.active:hover {
+	cursor: pointer;
+  transform: translate3d(0, -5px, 0);
+  -webkit-transform: translate3d(0, -5px, 0);
 }
 
 @media (min-width: 1550px) {
