@@ -41,28 +41,11 @@ $('a[href*="#"]')
 window.addEventListener('scroll', scrollFunction);
 
 function scrollFunction() {
-    const header = document.querySelector('header');
-    const ul  = document.querySelector('ul');
-    
-    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        document.getElementById("arrow-to-top").style.display = "block";
+    if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+        document.getElementById("arrow-to-top").classList.add('active');
 
     } else {
-        document.getElementById("arrow-to-top").style.display = "none";
-    }
-    
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        ul.style.marginTop = '7px';
-        document.getElementById('name').style.top = '20px';
-        header.style.height = '60px';
-        ul.style.lineHeight = '0px';
-        header.style.background = '#222222';
-      } else {
-        ul.style.marginTop = '0px';
-        document.getElementById('name').style.top = '29px';
-        document.querySelector('ul').style.lineHeight = 'initial';
-        header.style.background = 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2))';
-        header.style.height = '80px';
+        document.getElementById("arrow-to-top").classList.remove('active');
     }
 }
 
@@ -71,7 +54,7 @@ function topFunction() {
 	event.preventDefault();
 	$('html, body').animate({
   		scrollTop: 0
-	}, 1000);
+	}, 900);
 }
 
 var x = window.matchMedia("(max-width: 600px)");
