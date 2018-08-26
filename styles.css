@@ -13,7 +13,6 @@ header {
 	/*height: 80px;*/
 	margin: 0;
 	font-size: 20px;
-	/*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));*/
 	transition: background 0.5s;
 	transition-timing-function: ease-in;
 }
@@ -40,7 +39,7 @@ header a {
 	color: #fff;
 	 background-position: center;
 	background-size: cover;
-	background-image:linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4) ), url("blake-connally-373084-unsplash.jpg");
+	background-image:linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4) ), url(ChrisPetalotis.github.io/blake-connally-373084-unsplash.webp);
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
