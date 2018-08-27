@@ -40,7 +40,7 @@ header a {
 	color: #fff;
 	 background-position: center;
 	background-size: cover;
-	background-image:linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4) ), url("blake-connally-373084-unsplash.jpg");
+	background-image:linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4) ), url("blake-connally-373084-unsplash.webp");
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
