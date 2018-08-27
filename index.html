@@ -13,7 +13,9 @@
 	<head>
     		<title>Personal Website of Christos Petalotis</title>
   	</head>
-	<div id="main">
+
+	<!-- MAIN PART -->
+	<div id="main">		
 		<!-- MAIN TEXT -->
 		<main id="main-text">
 			<div class="intro">
@@ -28,27 +30,74 @@
 	
 	<!-- ABOUT ME -->
 	<section id="about-me">
-		<div id="about-me-text">
-			I am a graduate student on Finance & Accounting at the University of Macedonia in Thessaloniki, Greece. Though my passion is technology and programming, so I have been studying computer science and programming languages for about 3 years now. This has led to some major knowledge that I try to implement on projects and potentially work. Hit me up with ideas or projects to work on! I'd love to talk with you.
+		<h2>Know about me</h2>
+		<div id="general-info">
+			<section class="info">
+				<figure>
+					<div class="icons">
+						<img src="icons8-graduation-cap-100.png">
+					</div>
+					<figcaption>
+						<span class="title">Degree:</span> <p>Finance & Accounting</p>
+					</figcaption>
+			</section>
+			<section class="info">
+				<figure>
+					<div class="icons">
+						<img src="icons8-calendar-5-100.png">
+					</div>
+					<figcaption>
+						<span class="title"> Date of birth:</span> <p>February 5th, 1996</p>
+					</figcaption>
+			</section>
+			<section class="info">
+				<figure>
+					<div class="icons">
+						<img src="icons8-building-100.png">
+					</div>
+					<figcaption>
+						<span class="title">Area:</span> <p>Thessaloniki, Greece</p>
+					</figcaption>
+				</figure>
+			</section>
+			<section class="info">
+				<figure>
+					<div class="icons">
+						<img src="icons8-map-marker-100.png">
+					</div>
+					<figcaption>
+						<span class="title">Nationality:</span> <p>Greek</p>
+					</figcaption>
+				</figure>
+			</section>
+		</div>
+		<div id="about-me-text" class="text">
+			I am a graduate student on Finance & Accounting at the University of Macedonia in Thessaloniki, Greece. However, I'm passionate about technology and programming, so I have been studying computer science and programming languages for about 3 years now. This has led to some major knowledge that I try to implement on projects and potentially work. My goal is to create <em>responsive</em>, <em>fast</em> and <em>beautiful</em> websites.
+			<p style='text-align: center'>Hit me up with ideas or projects to work on! I'd love to talk with you.</p>
 		</div>
 	</section>
 
 	<!-- CONTACT -->
 	<footer id="contact">
-		<div id="email">
+		<div id="email" class="text">
 			<h3>Contact Me</h3>
-			<p>You can email me at:</p> <span id="email-adress"><em>chris.petalotis@gmail.com</em></span><p> or shoot me a message at one of my social media pages</p>
+			<p>You can email me at:</p> 
+			<span id="email-adress"><em>chris.petalotis@gmail.com</em></span>
+			<p> or shoot me a message at one of my social media pages.</p>
+			<p></p>
 		</div>
-		<div id="connect">
+		<div id="connect" class="text">
 			<h3>Connect</h3>
 			<a href="https://twitter.com/ChrisPetalotis" data-toggle="tooltip" class="fa fa-twitter" title="Twitter" target="_blank" rel="noopener"></a>
+			<!-- <a href="https://www.facebook.com/ChristosPetalotis" data-toggle="tooltip" class="fa fa-facebook" title="facebook" target="_blank" rel="noopener"></a> -->
 			<a href="https://www.linkedin.com/in/christos-petalotis-949934ba/" data-toggle="tooltip" class="fa fa-linkedin" title="LinkedIn" target="_blank" rel="noopener"></a>
 			<a href="https://github.com/ChrisPetalotis" data-toggle="tooltip" class="fa fa-github" title="GitHub" target="_blank" target="_blank" rel="noopener"></a>
 			<a href="https://codepen.io/YoPixel" data-toggle="tooltip" class="fa fa-codepen" title="Codepen" target="_blank" target="_blank" rel="noopener"></a> <!--rel="noopener" used on external links - 
 improves performance and prevents security vvulnerabilities -->
 
 		</div>
-		<button onclick="topFunction()" id="arrow-to-top" data-scroll-class='100vh:active'><div class="fa fa-angle-up"></div></button>
+		<button onclick="topFunction()" data-scroll-class='100vh:active' id="arrow-to-top"><div class="fa fa-angle-up"></div></button>
+		
 	</footer>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" rel='preconnect'>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" rel="preconnect">
