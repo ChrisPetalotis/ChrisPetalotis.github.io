@@ -13,6 +13,7 @@ header {
 	/*height: 80px;*/
 	margin: 0;
 	font-size: 20px;
+	/*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));*/
 	transition: background 0.5s;
 	transition-timing-function: ease-in;
 }
@@ -39,7 +40,7 @@ header a {
 	color: #fff;
 	 background-position: center;
 	background-size: cover;
-	background-image:linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4) ), url(ChrisPetalotis.github.io/blake-connally-373084-unsplash.webp);
+	background-image:linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4) ), url("blake-connally-373084-unsplash.jpg");
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -87,22 +88,57 @@ header a {
 	font-size: 22px;
 	border-top: 1px solid #D5D5D5;
 }
+#about-me h2{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 40px;
+	text-transform: capitalize;
+}
+#general-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 80%;
+	margin: 100px auto;
+	font-size: 20px;
+	text-align: center;
+
+}
+#general-info .info {
+	display: flex;
+	flex-direction: column;
+}
+#general-info figcaption {
+	margin-top: 20px;
+}
+#general-info .title {
+	font-weight: 600;
+}
+#general-info figcaption p {
+	font-size: 17px;
+	font-weight: 500;
+	color: #485455;
+}
 #about-me-text {
 	position: relative;
-	top: 35px;
 	padding: 120px;
+	padding-top: 0px;
 	margin: auto;
 	line-height: 2em;
 	align-self: center;
 }
+#about-me-text p{
+	color: #485455;
+	margin-top: 50px;
+}
 
 footer {
-	border-top: 2px #D5D5D5 solid;
+	/*border-top: 2px #D5D5D5 solid;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #3A65C4FF;
+	background: linear-gradient( rgba(79, 117, 201, 1 ),rgba(0, 0, 0, 0.8) );
 	padding: 5%;
 	color: #fff;
 	top: 0;
@@ -167,14 +203,14 @@ header li {
 #arrow-to-top .fa {
 	color: #3A65C4FF;
 	position: relative;
-	bottom: 20px;
+	bottom: 22px;
 	right: 9px;
 }
 #arrow-to-top:not(.active) {
   opacity: 0;
   transform: translate3d(0, 20px, 0);
   -webkit-transform: translate3d(0, 20px, 0);
-  pointer-events: none;
+  /*pointer-events: none;*/
 }
 #arrow-to-top.active:hover {
 	cursor: pointer;
