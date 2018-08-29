@@ -48,7 +48,7 @@ body, html {
 #main-text button:hover {
 	background-color: rgba(79, 117, 201, 0.9);
 }
-#main-text .details {
+.details {
 	font-size: 23px;
 	font-weight: 550;
 }
@@ -75,7 +75,7 @@ body, html {
 	text-align: center;
 
 }
-#general-info .info {
+.info {
 	display: flex;
 	flex-direction: column;
 }
@@ -116,13 +116,13 @@ footer {
 	min-height: 82.4vh;
 
 }
-footer #email, footer #connect {
+#email, #connect {
 	text-align: center;
 }
 footer h3 {
 	font-size: 2em;
 }
-footer #connect {
+#connect {
 	margin-top: 150px;
 	left: 30px;
 }
@@ -149,7 +149,7 @@ footer .fa:hover {
 	left: 11px;
 	margin: 0 auto;
 }
-footer .email_img img {
+.email_img img {
 	position: relative;
 	display: inline-block;
 	left: 2px;
@@ -159,7 +159,7 @@ footer .email_img img {
  	cursor: pointer;
 
 }
-footer .email_img:hover img {
+.email_img:hover img {
 	opacity: 1;
 	transform: translate3d(5px, 0, 0);
   -webkit-transform: translate3d(5px, 0, 0);
