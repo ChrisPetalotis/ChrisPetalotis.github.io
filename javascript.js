@@ -57,7 +57,7 @@ function scrollFunction() {
 // 	}, 900);
 // }
 document.getElementsById('arrow-to-top').onclick = function () {
-   scrollTo(document.body || document.documentElemen, 0, 900);   
+   scrollTo(document.body || document.documentElement, 0, 900);   
 }
 
 function scrollTo(element, to = 0, duration= 1000) {
