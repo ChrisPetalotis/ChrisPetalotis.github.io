@@ -22,7 +22,13 @@ body, html {
 	
 }
 #main-text {
+	opacity: 0;
+	transition: all 3.1s;
 	text-transform: uppercase;
+}
+
+.visible #main-text {
+	opacity: 1;
 }
 
 .intro {
