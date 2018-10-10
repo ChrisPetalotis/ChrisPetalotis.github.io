@@ -207,3 +207,22 @@ footer .fa:hover {
   transform: translate3d(0, -5px, 0);
   -webkit-transform: translate3d(0, -5px, 0);
 }
+
+.arrowDown {
+  color: white;
+  height: 50px;
+  position: absolute;
+  bottom: 10px;
+  animation: down 2s ease infinite;
+   /*cursor: pointer; */
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  },
+  100% {
+    opacity: 1;
+  }
+}
