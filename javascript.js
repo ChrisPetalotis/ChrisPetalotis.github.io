@@ -59,3 +59,8 @@ function topFunction() {
   		scrollTop: 0
 	}, 900);
 }
+
+// make the arrow fade out as we go to the next page 
+$(window).scroll(function() {
+    $(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 250);
+});
