@@ -40,6 +40,9 @@ $().ready( () => {
 			}
 	  });
 
+	// When the user scrolls down 450px from the top of the document, show the button
+	window.addEventListener('scroll', scrollFunction);
+	
 	function scrollFunction() {
 	    if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450)
 	        document.getElementById("arrow-to-top").classList.add('active');
@@ -47,8 +50,12 @@ $().ready( () => {
 	        document.getElementById("arrow-to-top").classList.remove('active');
 	}
 	
-	// When the user scrolls down 450px from the top of the document, show the button
-	window.addEventListener('scroll', scrollFunction);
+
+	}
+	// make the arrow fade out as we go to the next page 
+	$(window).scroll(function() {
+    	$(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 250);
+	});	
 	
 	// When the user clicks on the button, scroll to the top of the document
 	function topFunction() {
@@ -56,9 +63,4 @@ $().ready( () => {
 		$('html, body').animate({
   			scrollTop: 0
 		}, 900);
-	}
-	// make the arrow fade out as we go to the next page 
-	$(window).scroll(function() {
-    	$(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 250);
-});	
 });
