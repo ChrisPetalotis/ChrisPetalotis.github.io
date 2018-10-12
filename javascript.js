@@ -49,18 +49,17 @@ $().ready( () => {
 	    else 
 	        document.getElementById("arrow-to-top").classList.remove('active');
 	}
-	
 
-	}
-	// make the arrow fade out as we go to the next page 
-	$(window).scroll(function() {
-    	$(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 250);
-	});	
-	
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-		event.preventDefault();
-		$('html, body').animate({
-  			scrollTop: 0
-		}, 900);
+
+});
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+	event.preventDefault();
+	$('html, body').animate({
+  		scrollTop: 0
+	}, 900);
+}
+
+$(window).scroll(function() {
+    $(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 250);
 });
