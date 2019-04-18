@@ -55,9 +55,12 @@ body, html {
 	background-color: rgba(79, 117, 201, 0.9);
 }
 .details {
-	margin-top: -5px;
 	font-size: 23px;
 	font-weight: 550;
+}
+
+.details p {
+	margin-top: -5px;
 }
 
 			/* ABOUT-ME */
