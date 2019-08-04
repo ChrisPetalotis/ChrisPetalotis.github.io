@@ -59,6 +59,10 @@ body, html {
 	font-weight: 550;
 }
 
+.details p {
+	margin-top: -5px;
+}
+
 			/* ABOUT-ME */
 #about-me {
 	min-height: 70vh;
