@@ -15,7 +15,8 @@ $().ready( () => {
 		location.hostname == this.hostname
 		) {
 			// Figure out element to scroll to
-			var target = $(this.hash);
+			var target = $(this.hash); // this.hash reads the href attr of this and gets the 
+			// part of the URL beginning with #
 
 			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 			// Does a scroll target exist?
@@ -33,6 +34,7 @@ $().ready( () => {
 				return false;
 				} else {
 				$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+				// tabindex indicates that its element can be focused
 				$target.focus(); // Set focus again
 				};
 				});
@@ -52,7 +54,8 @@ $().ready( () => {
 
 
 });
-// When the user clicks on the button, scroll to the top of the document
+
+// When the user clicks on the arrow button, scroll to the top of the document
 function topFunction() {
 	event.preventDefault();
 	$('html, body').animate({
