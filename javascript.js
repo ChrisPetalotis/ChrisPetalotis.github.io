@@ -1,5 +1,5 @@
 $().ready( () => {
-	document.querySelector('main').classList.add('visible');
+	document.querySelector('#main').classList.add('visible');
 
 	// When clicking on a navbar link it goes to the corresponding part of the website
 	// Select all links with hashes
