@@ -90,15 +90,14 @@ body, html {
 #main-text button:hover {
 	background-color: rgba(79, 117, 201, 0.9);
 }
-.details {
+/* .details {
 	font-size: 23px;
 	font-weight: 550;
 }
 
 .details p {
 	margin-top: -5px;
-	text-align: center;
-}
+} */
 
 			/* ABOUT-ME */
 #about-me {
@@ -111,6 +110,10 @@ body, html {
 	text-align: center;
 	font-size: 40px;
 	text-transform: capitalize;
+}
+
+#about-me p {
+	text-align: center;
 }
 #general-info {
 	display: flex;
