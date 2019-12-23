@@ -57,11 +57,10 @@ body, html {
 .intro #name {
 	font-weight: 600;
 	font-size: 65px;
-	opacity: 0;
-	animation: opacity 2s 1;
+	animation: color 2s 1;
 }
 
-@keyframes opacity {
+@keyframes color {
 	0% {
 		color: transparent;
 	}
