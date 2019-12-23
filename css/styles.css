@@ -37,7 +37,31 @@ body, html {
 	margin-bottom: 50px;
 }
 
-.intro div {
+.intro span {
+	display: block;
+}
+
+#greetings {
+	position: relative;
+	background: black;
+	animation: text 3s 1;
+}
+
+@keyframes text {
+	0% {
+		color: transparent;
+		margin-bottom: -40px;
+	}
+	30% {
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+	}
+	85% {
+		margin-bottom: -40px;
+	}
+}
+
+.intro #name {
 	font-weight: 600;
 	font-size: 65px;
 }
