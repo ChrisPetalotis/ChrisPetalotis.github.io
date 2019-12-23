@@ -22,13 +22,7 @@ body, html {
 	
 }
 #main-text {
-	/*opacity: 0;*/
-	/*transition: all 3.1s;*/
 	text-transform: uppercase;
-}
-
-.visible #main-text {
-	/*opacity: 1;*/
 }
 
 .intro {
@@ -43,8 +37,7 @@ body, html {
 
 #greetings {
 	position: relative;
-	background: black;
-	animation: text 3s 1;
+	animation: text 2s 1;
 }
 
 @keyframes text {
@@ -64,6 +57,17 @@ body, html {
 .intro #name {
 	font-weight: 600;
 	font-size: 65px;
+	opacity: 0;
+	animation: opacity 2s 1;
+}
+
+@keyframes opacity {
+	0% {
+		color: transparent;
+	}
+	100% {
+		color: #fff;
+	}
 }
 
 #main-text button {
