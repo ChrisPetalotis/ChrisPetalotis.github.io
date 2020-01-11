@@ -112,7 +112,7 @@ body, html {
 	text-transform: capitalize;
 }
 
-#about-me p {
+#about-me > p {
 	text-align: center;
 }
 #general-info {
