@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 	<!-- Google Tag Manager -->
@@ -22,17 +22,19 @@
 
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#3A65C4FF">
+	<meta name="theme-color" content="#2E2E2E">
 	<meta name="description" content="Personal website of Christos Petalotis">
 	<meta name="google-site-verification" content="ce4kvtXXnZezIgSGgDJ9dQQtUFSFIPBI6aXUP_9r9DM" />
 	<title>Christos Petalotis</title>
+	
+	<link rel="shortcut icon" type="image" href="https://images.squarespace-cdn.com/content/v1/54ee0564e4b0dc9e9fc17cf1/1515433613825-2LEDN9I2PMUJD8LFLM1W/ke17ZwdGBToddI8pDm48kJycfsYb1urLU93EpFqOTQmoCXeSvxnTEQmG4uwOsdIceAoHiyRoc52GMN5_2H8Wp7zww8OjRrqjaM7_0x6HDLp42EP6IAa5vAmscK3sHI4MkNL5tmfZ3otlI9yi1IzH2Q/favicon.ico?format=">
 
 	<!-- STYLES -->
-	<link rel="stylesheet" href="ChrisPetalotis.github.io/css/styles.css">
-	<link rel="stylesheet" href="ChrisPetalotis.github.io/css/large-screens.css" media='(max-width:1550px)'>
-	<link rel="stylesheet" href="ChrisPetalotis.github.io/css/medium-screens.css" media='(max-width:800px)'>
-	<link rel="stylesheet" href="ChrisPetalotis.github.io/css/small-screens.css" media='(max-width:600px)'>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" rel='preconnect'>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/large-screens.css" media='(max-width:1550px)'>
+	<link rel="stylesheet" href="css/medium-screens.css" media='(max-width:800px)'>
+	<link rel="stylesheet" href="css/small-screens.css" media='(max-width:600px)'>
+	<link href="//db.onlinewebfonts.com/c/0fa1e92e9f6e5c33f13a60fc6d1dbf42?family=San+Francisco+Display" rel="stylesheet" type="text/css"/>
 	<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="preconnect prefetch">
 	<!-- Jqeury -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" rel='preconnect subresource'></script>
@@ -48,97 +50,44 @@
 
 	<!-- MAIN PART -->
 	<div id="main">		
-		<!-- MAIN TEXT -->
-		<main id="main-text">
-			<div class="intro">
-				<span id="greetings">Hello, I'm</span> <span id="name">Christos Petalotis</span>
+		<img id="banner" src="images/blake-connally-373084-unsplash.jpg"></img>
+		<div class="personal_info">
+			<div class="profile_pic">
+				<img id="profile_pic_image" src="prof_pic.jpg"></img>
 			</div>
-			<a href="#contact"><button name='get in touch'>GET IN TOUCH</button></a>
-		</main>
-		<!-- blinking arrow down -->
-		<svg class="arrowDown" aria-hidden="true" data-prefix="far" data-icon="angle-down" 
-		role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-down fa-w-10 fa-3x">
-		<path fill="currentColor" 
-		d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z" class="arrowDown">
-		</path></svg>
+			<div id="personal_name">Christos Petalotis</div>
+		</div>
 	</div>
 	
 	<!-- ABOUT ME -->
-	<section id="about-me">
-		<h2>Know about me</h2>
-		<div id="general-info">
-			<!-- <section class="info">
-				<figure>
-					<div class="icons">
-						<img src="ChrisPetalotis.github.io/icons8-graduation-cap-100.webp"  alt='graduation hat icon'>
-					</div>
-					<figcaption>
-						<span class="title">Degree:</span> <p>Finance & Accounting</p>
-					</figcaption>
-			</section> -->
-			<section class="info">
-				<figure>
-					<div class="icons">
-						<img src="ChrisPetalotis.github.io/icons8-calendar-5-100.webp" alt='calendar icon'>
-					</div>
-					<figcaption>
-						<span class="title"> Date of birth:</span> <p>February 5th, 1996</p>
-					</figcaption>
-			</section>
-			<section class="info">
-				<figure>
-					<div class="icons">
-						<img src="ChrisPetalotis.github.io/icons8-building-100.webp" alt='building icon'>
-					</div>
-					<figcaption>
-						<span class="title">Location:</span> <p>Thessaloniki, GR</p>
-					</figcaption>
-				</figure>
-			</section>
-			<section class="info">
-				<figure>
-					<div class="icons">
-						<img src="ChrisPetalotis.github.io/icons8-map-marker-100.webp" alt='map icon'>
-					</div>
-					<figcaption>
-						<span class="title">Nationality:</span> <p>Greek</p>
-					</figcaption>
-				</figure>
-			</section>
-		</div>
-		<div id="about-me-text" class="text">
-			I am a full-stack web developer, who likes to build websites that are beautiful, responsive and that actually work. I build them using state-of-the-art technologies and frameworks. I love spending time on even the smallest details and to optimize the applications that I create. I get the job done however difficult it is, because I put the extra effort in to make each project stand out.
-			<p>My skills include: <em>Python</em>, <em>JavaScript</em>, <em>SQL</em>.</p>
-			<p>Shoot me a message, let's make your goals happen.</p>
-		</div>
+	<section class="about-me">
+		<p id="about-me-text">
+			Hello, I am Christos Petalotis. I am a self-taught developer, working as cloud engineer and enjoying every single bug I face. I have experience working with various promgramming languages including
+			Python, JavaScript, SQL and frameworks like Serverless, Angular and Bootstrap. On the cloud, I like to use AWS and GCP to build high-performance, durable and cost-effective applications. Also, I like coffee, like lots of it.
+		</p>
 	</section>
 
 	<!-- CONTACT -->
-	<footer id="contact">
-		<div id="email" class="text">
-			<h3>Contact Me</h3>
-			<p>You can email me at:</p> 
-			<div class='email_img'>
-				<span id="email-adress"><em>chris.petalotis@gmail.com</em></span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=chris.petalotis@gmail.com" target="_blank" name='email me'><img src="ChrisPetalotis.github.io/icons8-gmail-32.webp" alt='gmail icon'></a>
-			</div>
-			<p> or shoot me a message at one of my social media pages.</p>
-			<p></p>
-		</div>
-		<div id="connect" class="text">
-			<h3>Connect</h3>
+	<footer>
+		<div id="connect">
+			<h3>Let's connect</h3>
+			<!-- Twitter -->
 			<a href="https://twitter.com/ChrisPetalotis" data-toggle="tooltip" class="fa fa-twitter" title="Twitter" target="_blank" rel="noopener"></a>
+			<!-- LinkedIn -->
 			<a href="https://www.linkedin.com/in/christos-petalotis-949934ba/" data-toggle="tooltip" class="fa fa-linkedin" title="LinkedIn" target="_blank" rel="noopener"></a>
+			<!-- Github -->
 			<a href="https://github.com/ChrisPetalotis" data-toggle="tooltip" class="fa fa-github" title="GitHub" target="_blank" target="_blank" rel="noopener"></a>
-			<a href="https://codepen.io/YoPixel" data-toggle="tooltip" class="fa fa-codepen" title="Codepen" target="_blank" target="_blank" rel="noopener"></a> 
-			<!--rel="noopener" used on external links - 
-improves performance and prevents security vulnerabilities -->
+			<!-- Codepen -->
+			<a href="https://codepen.io/YoPixel" data-toggle="tooltip" class="fa fa-codepen" title="Codepen" target="_blank" target="_blank" rel="noopener"></a>
+			<!-- Email -->
+			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=chris.petalotis@gmail.com" data-toggle="tooltip" class="fa fa-envelope-o" title="Email" target="_blank" target="_blank" rel="noopener"></a>
 
+			<!--rel="noopener" used on external links - improves performance and prevents security vulnerabilities -->
 		</div>
-
-		<!-- Arrow navigating to the top of the page -->
-		<button onclick="topFunction()" data-scroll-class='100vh:active' id="arrow-to-top" name='go to top'><div class="fa fa-angle-up"></div></button>
-		
 	</footer>
+
+	<!-- Arrow navigating to the top of the page -->
+	<button onclick="topFunction()" data-scroll-class='100vh:active' id="arrow-to-top" name='go to top'><div class="fa fa-angle-up"></div></button>
 	<script src="javascript.js" rel='preconnect'></script>
 </body>
 </html>
