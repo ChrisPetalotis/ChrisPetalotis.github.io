@@ -24,7 +24,6 @@ body, html {
 }*/
 
 .personal_info {
-	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -38,7 +37,6 @@ body, html {
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
-	border: 1px solid blue;
 	width: 80%;
 	margin: 0 auto;
 }
