@@ -24,13 +24,23 @@ body, html {
 }*/
 
 .personal_info {
+	border: 1px solid black;
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	flex-direction: column;
+	justify-content: flex-end;
 	position: absolute;
-	height: 74%;
+	height: 76%;
+	padding-right: 5em;
 	width: 60%;
-	margin-right: 10px;
+}
+
+.details {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	border: 1px solid blue;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .profile_pic {
@@ -55,7 +65,7 @@ body, html {
 	letter-spacing: 0.1em;
 	position: relative;
 	bottom: 0.5em;
-	right: 9em;
+	/* right: 9em; */
 	color: #2E2E2E;
 }
 
