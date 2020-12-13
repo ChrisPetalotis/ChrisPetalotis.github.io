@@ -21,7 +21,7 @@
 	<meta name="google-site-verification" content="ce4kvtXXnZezIgSGgDJ9dQQtUFSFIPBI6aXUP_9r9DM" />
 
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#2E2E2E">
 	<meta name="description" content="Personal website of Christos Petalotis">
 	<meta name="google-site-verification" content="ce4kvtXXnZezIgSGgDJ9dQQtUFSFIPBI6aXUP_9r9DM" />
@@ -30,14 +30,15 @@
 	<link rel="shortcut icon" type="image" href="https://images.squarespace-cdn.com/content/v1/54ee0564e4b0dc9e9fc17cf1/1515433613825-2LEDN9I2PMUJD8LFLM1W/ke17ZwdGBToddI8pDm48kJycfsYb1urLU93EpFqOTQmoCXeSvxnTEQmG4uwOsdIceAoHiyRoc52GMN5_2H8Wp7zww8OjRrqjaM7_0x6HDLp42EP6IAa5vAmscK3sHI4MkNL5tmfZ3otlI9yi1IzH2Q/favicon.ico?format=">
 
 	<!-- STYLES -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/large-screens.css">
-	<link rel="stylesheet" href="css/medium-screens.css" >
-	<link rel="stylesheet" href="css/small-screens.css">
-	<link href="//db.onlinewebfonts.com/c/0fa1e92e9f6e5c33f13a60fc6d1dbf42?family=San+Francisco+Display" rel="stylesheet" type="text/css"/>
+	<!-- <link rel="stylesheet" href="css/large-screens.css"> -->
+	<!-- <link rel="stylesheet" href="css/medium-screens.css" > -->
+	<!-- <link rel="stylesheet" href="css/small-screens.css"> -->
 	<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="preconnect prefetch">
 	<!-- Jqeury -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" rel='preconnect subresource'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" rel='preconnect subresource'></script>
 </head>
 <body>
 	<!-- Google Tag Manager (noscript) -->
@@ -47,49 +48,101 @@
 	<head>
     		<title>Personal Website of Christos Petalotis</title>
   	</head>
+	<div class="container-fluid">
+		<!-- MAIN PART -->
+		<div class="main">
+			<div class="main__section">
+				<div class="row">
+					<div class="col-12">
+						<div>
+							<div class="main__section--banner">
+								<img src="images/blake-connally-373084-unsplash.jpg"></img>
 
-	<!-- MAIN PART -->
-	<div id="main">		
-		<img id="banner" src="images/blake-connally-373084-unsplash.jpg"></img>
-		<div class="personal_info">
-			<div class="details">
-				<div class="profile_pic">
-					<img id="profile_pic_image" src="images/prof_pic.jpg"></img>
+							</div>
+						</div>
+						<div class="main__section__title">
+							<div class="row">
+								<div class="col-3">
+									<div class="main__section__title--prof-pic">
+										<img src="images/prof_pic.jpg"></img>
+									</div>
+								</div>
+								<div class="col-9">
+									<div class="main__section__title--name">Christos Petalotis</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
 				</div>
-				<div id="personal_name">Christos Petalotis</div>
+			</div>		
+		</div>
+		
+		<div class="about-me">
+			<div class="about-me__section">
+				<div class="row">
+					<div class="col-12">
+						<!-- ABOUT ME -->
+						<section class="about-me__section--text">
+							<p>
+								<i>Hey there!</i> I am Christos Petalotis. I am a self-taught developer, working as a cloud engineer and enjoying fixing every single bug I come across. I have experience working with various promgramming languages including Python, JavaScript, SQL and frameworks like Serverless, Angular. On the cloud, I like to use AWS and GCP to build high-performance, durable and cost-effective applications. Also, I like coffee, like lots of it.
+							</p>
+						</section>
+					</div>
+				</div>
 			</div>
 		</div>
+
+
+		<!-- Arrow navigating to the top of the page -->
+		<button onclick="topFunction()" data-scroll-class='100vh:active' id="arrow-to-top" name='go to top'><div class="fa fa-angle-up"></div></button>
 	</div>
-	
-	<!-- ABOUT ME -->
-	<section class="about-me">
-		<p id="about-me-text">
-			Hello, I am Christos Petalotis. I am a self-taught developer, working as a cloud engineer and enjoying fixing every single bug I come across. I have experience working with various promgramming languages including
-			Python, JavaScript, SQL and frameworks like Serverless, Angular and Bootstrap. On the cloud, I like to use AWS and GCP to build high-performance, durable and cost-effective applications. Also, I like coffee, like lots of it.
-		</p>
-	</section>
-
-	<!-- CONTACT -->
 	<footer>
-		<div id="connect">
-			<h3>Let's connect</h3>
-			<!-- Twitter -->
-			<a href="https://twitter.com/ChrisPetalotis" data-toggle="tooltip" class="fa fa-twitter" title="Twitter" target="_blank" rel="noopener"></a>
-			<!-- LinkedIn -->
-			<a href="https://www.linkedin.com/in/christos-petalotis-949934ba/" data-toggle="tooltip" class="fa fa-linkedin" title="LinkedIn" target="_blank" rel="noopener"></a>
-			<!-- Github -->
-			<a href="https://github.com/ChrisPetalotis" data-toggle="tooltip" class="fa fa-github" title="GitHub" target="_blank" target="_blank" rel="noopener"></a>
-			<!-- Codepen -->
-			<a href="https://codepen.io/YoPixel" data-toggle="tooltip" class="fa fa-codepen" title="Codepen" target="_blank" target="_blank" rel="noopener"></a>
-			<!-- Email -->
-			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=chris.petalotis@gmail.com" data-toggle="tooltip" class="fa fa-envelope-o" title="Email" target="_blank" target="_blank" rel="noopener"></a>
+		<div class="footer__section">
+			<div class="row" style="margin-right: 0">
+				<div class="col-12">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer__section--title">
+								<h3>Let's connect</h3>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="footer__section--social">
+								<div class="row no-gutters">
+									<div class="col-6 col-sm-3">
+										<!-- Twitter -->
+										<a href="https://twitter.com/ChrisPetalotis" data-toggle="tooltip" class="fa fa-twitter" title="Twitter" target="_blank" rel="noopener"></a>
+									</div>
+									<div class="col-6 col-sm-3">
+									<!-- LinkedIn -->
+										<a href="https://www.linkedin.com/in/christos-petalotis-949934ba/" data-toggle="tooltip" class="fa fa-linkedin" title="LinkedIn" target="_blank" rel="noopener"></a>
+									</div>
 
-			<!--rel="noopener" used on external links - improves performance and prevents security vulnerabilities -->
+									<div class="col-6 col-sm-3">
+
+									<!-- Github -->
+										<a href="https://github.com/ChrisPetalotis" data-toggle="tooltip" class="fa fa-github" title="GitHub" target="_blank" target="_blank" rel="noopener"></a>
+									</div>
+
+									<!-- Codepen -->
+									<!-- <a href="https://codepen.io/YoPixel" data-toggle="tooltip" class="fa fa-codepen" title="Codepen" target="_blank" target="_blank" rel="noopener"></a> -->
+									<!-- Email -->
+
+									<div class="col-6 col-sm-3">
+										<a href="https://mail.google.com/mail/?view=cm&fs=1&to=chris.petalotis@gmail.com" data-toggle="tooltip" class="fa fa-envelope-o" title="Email" target="_blank" target="_blank" rel="noopener"></a>
+									</div>
+
+									</div>
+								</div>					
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 
-	<!-- Arrow navigating to the top of the page -->
-	<button onclick="topFunction()" data-scroll-class='100vh:active' id="arrow-to-top" name='go to top'><div class="fa fa-angle-up"></div></button>
 	<script src="javascript.js" rel='preconnect'></script>
 </body>
 </html>
