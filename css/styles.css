@@ -189,6 +189,11 @@ body, html {
   }
 }
 
+.about-me__section--text span {
+  font-weight: 600;
+  font-size: 30px;
+}
+
 /* FOOTER */
 footer {
   background-color: #1E1E1E;
