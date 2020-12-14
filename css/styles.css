@@ -85,9 +85,9 @@ body, html {
 
 @media (max-width: 500px) {
   .main__section__title--prof-pic {
-    width: 6.5em;
-    height: 6.5em;
-    left: 1em;
+    width: 7em;
+    height: 7em;
+    left: 0.5em;
     top: -2.5em;
   }
 }
@@ -104,7 +104,6 @@ body, html {
   letter-spacing: 0.1em;
   position: relative;
   top: 0.7em;
-  left: 1em;
   color: #2E2E2E;
 }
 
@@ -139,7 +138,8 @@ body, html {
 
 @media (max-width: 500px) {
   .main__section__title--name {
-    font-size: 0.85em;
+    font-size: 1em;
+    left: 2em;
   }
 }
 
@@ -161,7 +161,7 @@ body, html {
 
 @media (max-width: 500px) {
   .about-me {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0.5em 0 3em;
   }
 }
@@ -213,8 +213,14 @@ footer .footer__section--title h3 {
 }
 
 footer .footer__section--social {
-  width: 50%;
+  width: 30%;
   margin: 1.5em auto;
+}
+
+@media (max-width: 1200px) {
+  footer .footer__section--social {
+    width: 50%;
+  }
 }
 
 footer .footer__section--social .fa {
