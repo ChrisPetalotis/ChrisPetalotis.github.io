@@ -4,37 +4,43 @@ body, html {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   border: 0;
-  top: 0;
-  overflow-x: hidden;
+  height: 100%;
 }
 
 body .container-fluid, html .container-fluid {
   padding: 0;
+  height: 100%;
 }
 
-.navbar {
-  padding-top: 2.4em;
-  padding-right: 5em;
-  background: #000;
-}
-
-.navbar a {
-  color: #D5D5D5;
-  text-decoration: none;
-  margin-right: 5em;
-}
-
-.navbar a:hover {
-  color: #ececec;
+body {
+  overflow-x: hidden;
 }
 
 /* MAIN */
 .main {
   background: #000;
   color: #ececec;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
+  height: 100%;
+}
+
+.main .navbar {
+  padding-top: 2.4em;
+  padding-right: 5em;
+  background: #000;
+}
+
+.main .navbar a {
+  color: #D5D5D5;
+  text-decoration: none;
+  margin-right: 5em;
+}
+
+.main .navbar a:hover {
+  color: #ececec;
+}
+
+.main .navbar .navbar-inverse .navbar-toggle {
+  border-color: white;
 }
 
 .main__section {
@@ -89,7 +95,7 @@ body .container-fluid, html .container-fluid {
   letter-spacing: 0.1em;
 }
 
-.main__section__box--description #hey {
+.main__section__box--description div {
   font-size: 1.6em;
 }
 

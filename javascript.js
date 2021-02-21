@@ -1,5 +1,5 @@
-$().ready(function () {
-		window.addEventListener('scroll', scrollFunction);
+$(window).ready(function () {
+	window.addEventListener('scroll', scrollFunction);
 });
 
 
@@ -9,8 +9,9 @@ function scrollFunction() {
 		document.getElementById("arrow-to-top").classList.add('active');
 	else 
 		document.getElementById("arrow-to-top").classList.remove('active');
-
-	$(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 1000);
+	console.log('scroll');
+	
+	$(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 100);
 }
 // When the user clicks on the arrow button, scroll to the top of the document
 function topFunction() {
