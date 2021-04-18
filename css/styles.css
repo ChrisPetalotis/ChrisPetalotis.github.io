@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+/* Variables */
 body, html {
   margin: 0;
   padding: 0;
@@ -9,7 +11,12 @@ body, html {
 
 body .container-fluid, html .container-fluid {
   padding: 0;
-  height: 100%;
+}
+
+@media (min-height: 700px) {
+  body .container-fluid, html .container-fluid {
+    height: 100%;
+  }
 }
 
 body {
@@ -29,23 +36,72 @@ body {
   background: #000;
 }
 
+.main .navbar .navbar-brand {
+  font-family: 'Cedarville Cursive',cursive;
+  margin-left: 3em;
+}
+
+.main .navbar .navbar-toggler {
+  border-color: #ececec;
+}
+
+.main .navbar .navbar-toggler:focus {
+  outline: none;
+}
+
+.main .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236, 236, 236, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 992px) {
+  .main .navbar .nav-item a {
+    margin: 1em 0 0 3.5em;
+    width: 12em;
+    border-bottom: 1px solid #fff;
+  }
+  .main .navbar .nav-item a:hover {
+    color: #ececec;
+  }
+}
+
+@media (min-width: 992px) {
+  .main .navbar .nav-item a {
+    margin: 0 5em 0 0;
+    border: 0;
+    width: 100%;
+  }
+  .main .navbar .nav-item a:after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid #ececec;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    width: 70%;
+    padding-bottom: .3em;
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+  }
+  .main .navbar .nav-item a:hover:after {
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
 .main .navbar a {
   color: #D5D5D5;
   text-decoration: none;
-  margin-right: 5em;
-}
-
-.main .navbar a:hover {
-  color: #ececec;
-}
-
-.main .navbar .navbar-inverse .navbar-toggle {
-  border-color: white;
 }
 
 .main__section {
   -webkit-box-shadow: 8px 20px 35px -25px black;
           box-shadow: 8px 20px 35px -25px black;
+  background-color: #000;
 }
 
 .main__section__box {
@@ -89,8 +145,8 @@ body {
 
 .main__section__box--description {
   font-size: 1.2em;
-  width: 70%;
-  margin: 10em auto;
+  width: 90%;
+  margin: 10em 2em;
   line-height: 2;
   letter-spacing: 0.1em;
 }
@@ -133,6 +189,71 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.certifications {
+  margin-top: 2.5em;
+}
+
+.certifications__section {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.certifications__section--left--item, .certifications__section--right--item {
+  width: 40em;
+  padding: 1em;
+  margin: 2em 5em;
+  -webkit-box-shadow: 10px 10px 25px 0px #aaa;
+          box-shadow: 10px 10px 25px 0px #aaa;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.certifications__section--left--item:hover, .certifications__section--right--item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.certifications__section--left--item img, .certifications__section--right--item img {
+  width: 11em;
+  height: 11em;
+  margin-left: 2em;
+}
+
+.certifications__section--left--item .cert_description, .certifications__section--right--item .cert_description {
+  margin: auto 0;
+}
+
+@media (min-width: 992px) {
+  .certifications__section--left {
+    padding-left: 13em;
+  }
+}
+
+@media (min-width: 992px) {
+  .certifications__section--left h3 {
+    margin: 0 0 1.2em 2.3em;
+  }
+}
+
+@media (min-width: 992px) {
+  .certifications__section--right h3 {
+    margin: 0 3.2em 1.2em 0;
+  }
+}
+
+.certifications__section a {
+  color: #000;
+  text-decoration: none;
+}
+
+.certifications__section span.provider {
+  font-weight: 600;
+}
+
+.certifications__section #grayed-out {
+  color: #aaa;
 }
 
 /* ABOUT ME */

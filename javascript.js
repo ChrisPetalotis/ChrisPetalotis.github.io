@@ -1,20 +1,29 @@
-$(window).ready(function () {
-	window.addEventListener('scroll', scrollFunction);
+$(document).ready(function () {
+
+	// Assign event listeners
+	$(window).scroll(() => showArrowToTop());
+	$('#arrow-to-top').click((event) => scrollToTop(event));
+	$('.nav-item>a').click(function(event) {
+		event.preventDefault();
+		const targetSection = $($(this).attr("href"));
+		const marginTop = parseInt(targetSection.css('margin-top'), 10)
+		
+		$('html, body').animate({ scrollTop: targetSection.offset().top - marginTop}, 750);
+	})
 });
 
 
-function scrollFunction() {
-		// When the user scrolls down 450px from the top of the document, show the scroll-to-top-button
+function showArrowToTop() {
+	// When the user scrolls down 450px from the top of the document, show the scroll-to-top-button
 	if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450)
 		document.getElementById("arrow-to-top").classList.add('active');
 	else 
 		document.getElementById("arrow-to-top").classList.remove('active');
-	console.log('scroll');
 	
 	$(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 100);
 }
 // When the user clicks on the arrow button, scroll to the top of the document
-function topFunction() {
+function scrollToTop(event) {
 	event.preventDefault();
 	$('html, body').animate({
   		scrollTop: 0
