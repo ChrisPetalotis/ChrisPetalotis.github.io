@@ -177,8 +177,8 @@ section {
 				line-height: 2;
 				letter-spacing: 0.1em;
 				
-				@media (max-width: 767px) {
-					margin-top: 6em;
+				@media (max-width: $screen-md) {
+					margin: 6em auto;
 				}
 			}
 		}

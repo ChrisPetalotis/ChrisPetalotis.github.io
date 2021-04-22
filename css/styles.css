@@ -182,9 +182,9 @@ section h3 {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main__section__box--description {
-    margin-top: 6em;
+    margin: 6em auto;
   }
 }
 
