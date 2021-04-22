@@ -131,7 +131,7 @@ section h3 {
 
 @media (max-width: 1300px) {
   .main__section__box {
-    width: 80%;
+    width: 86%;
   }
 }
 
@@ -173,6 +173,7 @@ section h3 {
 
 .main__section__box--description div {
   font-size: 1.6em;
+  margin-bottom: 0.5em;
 }
 
 @media (max-width: 768px) {
