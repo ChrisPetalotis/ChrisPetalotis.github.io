@@ -4,11 +4,12 @@ $(document).ready(function () {
 	$(window).scroll(() => showArrowToTop());
 	$('#arrow-to-top').click((event) => scrollToTop(event));
 	$('.nav-item>a').click(function(event) {
-		event.preventDefault();
-		const targetSection = $($(this).attr("href"));
-		const marginTop = parseInt(targetSection.css('margin-top'), 10)
-		
-		$('html, body').animate({ scrollTop: targetSection.offset().top - marginTop}, 750);
+		const targetSection = $(this).attr("href");
+		if (!targetSection.includes('html')) {
+			event.preventDefault();
+			const marginTop = parseInt($(targetSection).css('margin-top'), 10)
+			$('html, body').animate({ scrollTop: $(targetSection).offset().top - marginTop}, 750);
+		}
 	})
 });
 

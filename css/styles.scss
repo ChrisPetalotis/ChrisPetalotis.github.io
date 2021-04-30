@@ -327,10 +327,10 @@ section {
 		text-align: center;
 		// padding: 0 15em;
 		margin: 5em auto;
-		width: 75%;
+		width: 85%;
 
-		@media (min-width: 1200px) and (max-width: 1700px) {
-			width: 85%;
+		@media (min-width: 1600px) {
+			width: 75%;
 		}
 		
 		&--left--item, &--right--item {
@@ -340,9 +340,6 @@ section {
 			box-shadow: 10px 10px 25px 0px #aaa;
 			transition: all 0.3s;
 
-			@media (max-width: 1600px) {
-				// width: 90%;
-			}
 
 			@media (max-width: $screen-xl) {
 				margin: 3em 0;
@@ -355,9 +352,11 @@ section {
 			img {
 				width: 11em;
 				height: 11em;
+				margin-bottom: 1em;
 
-				@media (min-width: 1200px) {
+				@media (min-width: $screen-lg) {
 					margin-left: 2em;
+					margin-bottom: 0em;
 				}
 				
 			}
@@ -403,20 +402,20 @@ footer {
 		}
 
 		&--social {
-			// width: 30%;
+			// width: 50%;
 			margin: 4.5em auto 0;
 			padding-bottom: 4em;
 
-			// @media (max-width: 1200px) {
-			// 	width: 50%;
-			// }
+			@media (min-width: $screen-sm) {
+				width: 50%;
+			}
 
-			@media (max-width: $screen-md) {
+			@media (max-width: $screen-lg) {
 				margin-top: 2.5em;
 			}
 
 			.col-6, .col-12 {
-				@media (max-width: $screen-md) {
+				@media (max-width: $screen-lg) {
 					margin-top: 1em;
 				}
 			}
@@ -425,8 +424,6 @@ footer {
 				font-size: 40px;
 				color: #fff;
 				text-decoration: none;
-
-				
 
 				&:hover {
 					color: #D5D5D5;
