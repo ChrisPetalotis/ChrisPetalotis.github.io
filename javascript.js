@@ -20,7 +20,7 @@ function showArrowToTop() {
 	else 
 		document.getElementById("arrow-to-top").classList.remove('active');
 	
-	$(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 100);
+	$(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 5000);
 }
 // When the user clicks on the arrow button, scroll to the top of the document
 function scrollToTop(event) {

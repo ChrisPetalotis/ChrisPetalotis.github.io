@@ -127,6 +127,7 @@ section h3 {
 .main__section__box {
   width: 65%;
   margin: 0 auto;
+  padding: 0;
 }
 
 @media (max-width: 1300px) {
@@ -184,8 +185,12 @@ section h3 {
 
 @media (max-width: 768px) {
   .main__section__box--description {
-    margin: 6em auto;
+    margin: 6em auto 3em;
   }
+}
+
+.main__section .arrowDown {
+  margin-bottom: 2em;
 }
 
 .main__section .arrowDown > svg {
@@ -370,13 +375,9 @@ section h3 {
 }
 
 .certifications__section--left--item .cert_description, .certifications__section--right--item .cert_description {
-  margin: auto 0;
-}
-
-@media (max-width: 1200px) {
-  .certifications__section--left--item .cert_description, .certifications__section--right--item .cert_description {
-    margin: 2em 0 1em;
-  }
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 1em;
 }
 
 .certifications__section a {
@@ -396,13 +397,14 @@ section h3 {
 footer {
   background-color: #2E2E2E;
   color: #fff;
-  height: 17em;
+  height: 20em;
   text-align: center;
+  overflow: hidden;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 576px) {
   footer {
-    height: initial;
+    height: 100%;
   }
 }
 
@@ -416,31 +418,29 @@ footer .footer__section--title h3 {
 }
 
 footer .footer__section--social {
-  width: 30%;
-  margin: 1.5em auto;
+  margin: 4.5em auto 0;
+  padding-bottom: 4em;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   footer .footer__section--social {
-    width: 50%;
+    margin-top: 2.5em;
   }
 }
 
-footer .footer__section--social .fa {
-  padding: 25px;
+@media (max-width: 768px) {
+  footer .footer__section--social .col-6, footer .footer__section--social .col-12 {
+    margin-top: 1em;
+  }
+}
+
+footer .footer__section--social a {
   font-size: 40px;
   color: #fff;
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
-  footer .footer__section--social .fa {
-    padding: 25px 0;
-    font-size: 35px;
-  }
-}
-
-footer .footer__section--social .fa:hover {
+footer .footer__section--social a:hover {
   color: #D5D5D5;
 }
 
