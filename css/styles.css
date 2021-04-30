@@ -34,7 +34,6 @@ section h3 {
 .main {
   background: #000;
   color: #ececec;
-  min-height: 100vh;
 }
 
 .main .navbar {
@@ -118,6 +117,10 @@ section h3 {
   text-decoration: none;
 }
 
+.main .landing_page {
+  min-height: 100vh;
+}
+
 .main__section {
   -webkit-box-shadow: 8px 20px 35px -25px black;
           box-shadow: 8px 20px 35px -25px black;
@@ -157,7 +160,7 @@ section h3 {
   width: 30em;
   height: 30em;
   overflow: hidden;
-  margin: 10em auto;
+  margin: 9em auto;
 }
 
 @media (max-width: 1100px) {
@@ -171,7 +174,7 @@ section h3 {
   .main__section__box--prof-pic {
     width: 20em;
     height: 20em;
-    margin: 10em auto 0;
+    margin: 6.5em auto 0;
   }
 }
 
@@ -183,7 +186,7 @@ section h3 {
 .main__section__box--description {
   font-size: 1.2em;
   width: 90%;
-  margin: 10em 2em;
+  margin: 9em 2em;
   line-height: 2;
   letter-spacing: 0.1em;
 }
@@ -236,6 +239,43 @@ section h3 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.main .blog_page .main__section__header {
+  text-align: center;
+}
+
+.main .blog_page .main__section__header h1 {
+  font-size: 4.3em;
+  margin-top: 1.5em;
+  font-weight: 600;
+}
+
+.main .blog_page .main__section__header .page_description {
+  margin: 3em auto 0;
+  padding-bottom: 3em;
+  width: 60%;
+}
+
+@media (max-width: 576px) {
+  .main .blog_page .main__section__header .page_description {
+    width: 80%;
+  }
+}
+
+.posts-container {
+  margin-top: 5em;
+  text-align: center;
+  color: #2E2E2E;
+  opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+  .posts-container {
+    min-height: 20vh;
+    width: 90%;
+    margin: 5em auto;
   }
 }
 

@@ -12,7 +12,7 @@ $black: #000;
 $white: #fff;
 $off-white: #ececec;
 $grey: #D5D5D5;
-$dark-grey: #2E2E2E;
+$dark-gray: #2E2E2E;
 $blue: rgb(66, 122, 206);
 
 body, html {
@@ -45,11 +45,6 @@ section {
 }
 			/* MAIN */
 .main {
-	background: $black;
-	color: $off-white;
-	min-height: 100vh;
-	// display:block;
-
 	.navbar {
 		padding-top: 2.4em;
 		padding-right: 5em;
@@ -122,6 +117,13 @@ section {
 		}
 	}
 
+	background: $black;
+	color: $off-white;
+
+	.landing_page {
+		min-height: 100vh;
+	}
+
 	&__section {
 		box-shadow: 8px 20px 35px -25px rgba(0, 0, 0, 1);
 		background-color: $black;
@@ -148,12 +150,13 @@ section {
 			@media (max-width: 1300px) {
 				width: 86%;
 			}
+
 			&--prof-pic {
 				border-radius: 50%;
 				width: 30em;
 				height: 30em;
 				overflow: hidden;
-				margin: 10em auto;
+				margin: 9em auto;
 
 				@media (max-width: 1100px) {
 					width: 25em;
@@ -162,7 +165,7 @@ section {
 				@media (max-width: 767px) {
 					width: 20em;
 					height: 20em;
-					margin: 10em auto 0;
+					margin: 6.5em auto 0;
 				}
 				img {
 					width: auto;
@@ -183,7 +186,7 @@ section {
 					font-size: 1.1em;
 				}
 				width: 90%;
-				margin: 10em 2em;
+				margin: 9em 2em;
 				line-height: 2;
 				letter-spacing: 0.1em;
 				
@@ -213,9 +216,45 @@ section {
 		100% {
 		  opacity: 1;
 		}
-	  }
-}
+	}
 
+	.blog_page {
+		// min-height: 50vh;
+
+		.main__section {
+			&__header {
+				text-align: center;
+		
+				h1 {
+					font-size: 4.3em;
+					margin-top: 1.5em;
+					font-weight: 600;
+				}
+		
+				.page_description {
+					margin: 3em auto 0;
+					padding-bottom: 3em;
+					width: 60%;
+					@media (max-width: $screen-sm) {
+						width: 80%;
+					}
+				}
+			}
+		}
+	}
+}
+.posts-container {
+	margin-top: 5em;
+	text-align: center;
+	color: $dark-gray;
+	opacity: 0.8;
+
+	@media (max-width: $screen-sm) {
+		min-height: 20vh;
+		width: 90%;
+		margin: 5em auto;
+	}
+}
 			/* ABOUT ME */
 .about-me {
     font-size: 1.2em;
@@ -396,7 +435,7 @@ section {
 }
 			/* FOOTER */
 footer {
-	background-color: $dark-grey;
+	background-color: $dark-gray;
 	color: $white;
 	height: 20em;	
 	text-align: center;
@@ -468,7 +507,7 @@ footer {
 	-webkit-transition: 0.2s ease-out;
 	-moz-transition: 0.2s ease-out;
 	outline: none;
-	border: 1px solid $dark-grey;
+	border: 1px solid $dark-gray;
 
 	@media (max-width: $screen-md) {
 		width: 2.91428571em;
@@ -476,7 +515,7 @@ footer {
 		// right: 2.5em;
 	}
 	.fa {
-		color: $dark-grey;
+		color: $dark-gray;
 		position: relative;
 		bottom: 17.4px;
 		right: 4.3px;
