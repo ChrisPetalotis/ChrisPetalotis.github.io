@@ -132,8 +132,9 @@ section h3 {
   color: #000;
   border-radius: 20px;
   margin: 0 auto;
-  padding: .2em 1.4em;
+  padding: .3em 1.4em;
   position: relative;
+  line-height: 1px;
   top: 3em;
 }
 
@@ -453,7 +454,7 @@ section h3 {
 
 /* FOOTER */
 footer {
-  background-color: #2E2E2E;
+  background-color: #111111;
   color: #fff;
   height: 20em;
   text-align: center;

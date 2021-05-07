@@ -133,8 +133,9 @@ section {
 			color: $black;
 			border-radius: 20px;
 			margin: 0 auto;
-			padding: .2em 1.4em;
+			padding: .3em 1.4em;
 			position: relative;
+			line-height: 1px;
 			top: 3em;
 
 			@media (max-width: $screen-sm) {
@@ -435,7 +436,7 @@ section {
 }
 			/* FOOTER */
 footer {
-	background-color: $dark-gray;
+	background-color: #111111;
 	color: $white;
 	height: 20em;	
 	text-align: center;
