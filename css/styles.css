@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /* Variables */
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', 'Montserrat', sans-serif;
   border: 0;
   overflow-x: hidden;
 }
@@ -15,6 +15,15 @@ body .container-fluid, html .container-fluid {
 
 body {
   overflow-x: hidden;
+}
+
+body .fadeIn-down {
+  -webkit-animation: fadein-down 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Firefox < 16 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+  animation: fadein-down 1s;
 }
 
 section {
@@ -32,14 +41,13 @@ section h3 {
 
 /* MAIN */
 .main {
-  background: #000;
+  background: #0B0C0D;
   color: #ececec;
 }
 
 .main .navbar {
   padding-top: 2.4em;
   padding-right: 5em;
-  background: #000;
 }
 
 @media (max-width: 600px) {
@@ -49,8 +57,9 @@ section h3 {
 }
 
 .main .navbar .navbar-brand {
-  font-family: 'Cedarville Cursive',cursive;
-  margin-left: 3em;
+  font-family: 'Public Sans',cursive;
+  margin-left: 5em;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 600px) {
@@ -124,7 +133,6 @@ section h3 {
 .main__section {
   -webkit-box-shadow: 8px 20px 35px -25px black;
           box-shadow: 8px 20px 35px -25px black;
-  background-color: #000;
 }
 
 .main__section #soon-msg {
@@ -267,7 +275,7 @@ section h3 {
 .posts-container {
   margin-top: 5em;
   text-align: center;
-  color: #2E2E2E;
+  color: #1A1D20;
   opacity: 0.8;
 }
 
@@ -453,7 +461,7 @@ section h3 {
 
 /* FOOTER */
 footer {
-  background-color: #111111;
+  background-color: #0B0C0D;
   color: #fff;
   height: 20em;
   text-align: center;
@@ -502,10 +510,12 @@ footer .footer__section--social a {
   font-size: 40px;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 footer .footer__section--social a:hover {
-  color: #D5D5D5;
+  color: #427ace;
 }
 
 #arrow-to-top {
@@ -529,7 +539,7 @@ footer .footer__section--social a:hover {
   -webkit-transition: 0.2s ease-out;
   -moz-transition: 0.2s ease-out;
   outline: none;
-  border: 1px solid #2E2E2E;
+  border: 1px solid #1A1D20;
 }
 
 @media (max-width: 768px) {
@@ -540,7 +550,7 @@ footer .footer__section--social a:hover {
 }
 
 #arrow-to-top .fa {
-  color: #2E2E2E;
+  color: #1A1D20;
   position: relative;
   bottom: 17.4px;
   right: 4.3px;
@@ -567,4 +577,31 @@ footer .footer__section--social a:hover {
   transform: translate3d(0, -3px, 0);
   -webkit-transform: translate3d(0, -3px, 0);
 }
+
+@keyframes fadein-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/* Internet Explorer */
 /*# sourceMappingURL=styles.css.map */
