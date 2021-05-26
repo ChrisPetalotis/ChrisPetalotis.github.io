@@ -668,7 +668,7 @@ footer .footer__section--social a:hover {
 }
 
 .post-container_header--image {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 .post-container_header--image img {
@@ -678,7 +678,7 @@ footer .footer__section--social a:hover {
 
 .post-container .post-body {
   width: 95%;
-  margin: 0 auto;
+  margin-left: 1em;
 }
 
 .post-container .post-body p, .post-container .post-body li {
