@@ -1,0 +1,37 @@
+@import "styles.scss";
+
+.posts-container {
+
+    article {
+        margin: 0 10em 5em;
+        width: 68%;
+    }
+
+    &__post {
+
+        .image-div {
+            height: 218px;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &--title {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 500;
+            text-align-last: left;
+        }
+    }
+
+    a {
+        color: $black;
+        transition: 0.3s;
+        &:hover {
+            color: $blue;
+        }
+    }
+}

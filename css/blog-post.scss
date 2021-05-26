@@ -1,0 +1,89 @@
+@import "styles.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+a {
+    // color: $blue;
+}
+
+.navbar {
+    padding: 2.4em 0;
+}
+.post-container {
+    width: 50%;
+    height: auto;
+    margin: 3em auto;
+    font-family: 'Inter', sans-serif;
+
+    @media (max-width: $screen-sm) {
+        width: 81%;
+    }
+
+    @media (max-width: $screen-lg) {
+        width: 60%;
+    }
+    &_header {
+
+        height: 600px;
+        overflow: hidden;
+        margin-bottom: 3em;
+
+        &--title {
+            font-weight: 500;
+        }
+
+        &--date {
+            color: #656D78;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 11px;
+            margin-left: 2px;
+        }
+        
+        &--image {
+            margin-top: 1em;
+
+            img {
+                width: 95%;
+                height: auto;
+            }
+        }
+    }
+
+    
+    
+
+    .post-body {
+        width: 95%;
+        margin: 0 auto;
+    
+        p, li {
+            line-height: 1.7em;
+            // font-style: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            border-bottom: 1px solid #E6E9ED;
+            padding-bottom: 2px;
+        }
+
+        h3 {
+            margin: 1em .2em;
+        }
+
+        ol:not(:last-child) {
+            margin-bottom: 1em;
+        }
+
+        img {
+			box-shadow: 10px 10px 25px 0px #aaa;
+            width: 97%;
+            height: auto;
+            margin-bottom: 3.5em;
+        }
+    }
+}
+
+footer {
+    margin-top: 10em;
+}
