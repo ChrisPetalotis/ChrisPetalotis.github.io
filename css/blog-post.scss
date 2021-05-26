@@ -5,6 +5,14 @@ a {
     // color: $blue;
 }
 
+.navbar-brand {
+    margin-left: 6em;
+
+    @media (max-width: 600px) {
+        margin-left: 1.5em;
+    }
+}
+
 .navbar {
     padding: 2.4em 0;
 }
@@ -22,13 +30,12 @@ a {
         width: 60%;
     }
     &_header {
-
         height: 600px;
         overflow: hidden;
         margin-bottom: 3em;
 
-        @media (max-width: $screen-lg) {
-            margin-bottom: 1em;
+        @media (max-width: 1500px) {
+            height: initial;
         }
 
         &--title {
@@ -47,7 +54,7 @@ a {
             margin-top: 1em;
 
             img {
-                width: 95%;
+                width: 97%;
                 height: auto;
             }
         }

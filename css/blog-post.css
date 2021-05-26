@@ -610,6 +610,16 @@ footer .footer__section--social a:hover {
 
 /* Internet Explorer */
 
+.navbar-brand {
+  margin-left: 6em;
+}
+
+@media (max-width: 600px) {
+  .navbar-brand {
+    margin-left: 1.5em;
+  }
+}
+
 .navbar {
   padding: 2.4em 0;
 }
@@ -639,9 +649,9 @@ footer .footer__section--social a:hover {
   margin-bottom: 3em;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1500px) {
   .post-container_header {
-    margin-bottom: 1em;
+    height: initial;
   }
 }
 
@@ -662,7 +672,7 @@ footer .footer__section--social a:hover {
 }
 
 .post-container_header--image img {
-  width: 95%;
+  width: 97%;
   height: auto;
 }
 
