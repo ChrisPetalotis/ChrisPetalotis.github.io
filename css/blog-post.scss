@@ -27,6 +27,10 @@ a {
         overflow: hidden;
         margin-bottom: 3em;
 
+        @media (max-width: $screen-lg) {
+            margin-bottom: 1em;
+        }
+
         &--title {
             font-weight: 500;
         }
