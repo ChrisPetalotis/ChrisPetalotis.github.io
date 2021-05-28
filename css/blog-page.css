@@ -614,8 +614,27 @@ footer .footer__section--social a:hover {
   width: 68%;
 }
 
+@media (max-width: 1300px) {
+  .posts-container article {
+    margin: 0 auto 5em;
+    width: 88%;
+  }
+}
+
+@media (max-width: 992px) {
+  .posts-container article {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .posts-container article {
+    width: 68%;
+  }
+}
+
 .posts-container__post .image-div {
-  height: 218px;
+  max-height: 218px;
   overflow: hidden;
 }
 

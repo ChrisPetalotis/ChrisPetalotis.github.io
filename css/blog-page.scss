@@ -5,12 +5,26 @@
     article {
         margin: 0 10em 5em;
         width: 68%;
+
+        @media (max-width: 1300px) {
+            margin: 0 auto 5em;
+            width: 88%;
+
+        }
+
+        @media (max-width: $screen-lg) {
+            width: 100%;
+        }
+
+        @media (max-width: $screen-sm) {
+            width: 68%;
+        }
     }
 
     &__post {
 
         .image-div {
-            height: 218px;
+            max-height: 218px;
             overflow: hidden;
         }
 

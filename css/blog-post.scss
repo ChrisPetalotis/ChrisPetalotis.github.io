@@ -1,20 +1,18 @@
 @import "styles.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-a {
-    // color: $blue;
-}
 
-.navbar-brand {
-    margin-left: 6em;
-
-    @media (max-width: 600px) {
-        margin-left: 1.5em;
-    }
-}
 
 .navbar {
     padding: 2.4em 0;
+    
+    .navbar-brand {
+        margin-left: 6em;
+    
+        @media (max-width: $screen-sm) {
+            margin-left: 1.5em !important;
+        }
+    }
 }
 .post-container {
     width: 50%;
@@ -22,13 +20,14 @@ a {
     margin: 3em auto;
     font-family: 'Inter', sans-serif;
 
+    @media (max-width: 1200px) {
+        width: 60%;
+    }
     @media (max-width: $screen-sm) {
         width: 81%;
     }
 
-    @media (max-width: $screen-lg) {
-        width: 60%;
-    }
+    
     &_header {
         height: 600px;
         overflow: hidden;
@@ -36,6 +35,10 @@ a {
 
         @media (max-width: 1500px) {
             height: initial;
+        }
+
+        @media (max-width: $screen-md) {
+            margin-bottom: 2.1em;
         }
 
         &--title {
@@ -66,7 +69,19 @@ a {
     .post-body {
         width: 95%;
         margin-left: 1em;
-    
+        
+        // @media (max-width: $screen-sm) {
+            // margin-left: 0;
+        // }
+
+        @media (max-width: 1500px) {
+            margin-left: 0.8em;
+        }
+
+        @media (max-width: $screen-lg) {
+            margin-left: 0.5em;
+        }
+
         p, li {
             line-height: 1.7em;
         }

@@ -610,18 +610,18 @@ footer .footer__section--social a:hover {
 
 /* Internet Explorer */
 
-.navbar-brand {
+.navbar {
+  padding: 2.4em 0;
+}
+
+.navbar .navbar-brand {
   margin-left: 6em;
 }
 
-@media (max-width: 600px) {
-  .navbar-brand {
-    margin-left: 1.5em;
+@media (max-width: 576px) {
+  .navbar .navbar-brand {
+    margin-left: 1.5em !important;
   }
-}
-
-.navbar {
-  padding: 2.4em 0;
 }
 
 .post-container {
@@ -631,15 +631,15 @@ footer .footer__section--social a:hover {
   font-family: 'Inter', sans-serif;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   .post-container {
-    width: 81%;
+    width: 60%;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .post-container {
-    width: 60%;
+    width: 81%;
   }
 }
 
@@ -652,6 +652,12 @@ footer .footer__section--social a:hover {
 @media (max-width: 1500px) {
   .post-container_header {
     height: initial;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-container_header {
+    margin-bottom: 2.1em;
   }
 }
 
@@ -679,6 +685,18 @@ footer .footer__section--social a:hover {
 .post-container .post-body {
   width: 95%;
   margin-left: 1em;
+}
+
+@media (max-width: 1500px) {
+  .post-container .post-body {
+    margin-left: 0.8em;
+  }
+}
+
+@media (max-width: 992px) {
+  .post-container .post-body {
+    margin-left: 0.5em;
+  }
 }
 
 .post-container .post-body p, .post-container .post-body li {
