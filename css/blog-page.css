@@ -15,6 +15,8 @@ body .container-fluid, html .container-fluid {
 
 body .container-fluid a, html .container-fluid a {
   text-decoration: none;
+  border-bottom: 1px solid #E6E9ED;
+  padding-bottom: 2px;
 }
 
 body {
@@ -64,6 +66,8 @@ section h3 {
   font-family: 'Public Sans',cursive;
   margin-left: 5em;
   letter-spacing: 2px;
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 @media (max-width: 600px) {
@@ -218,6 +222,10 @@ section h3 {
   .main__section__box--description {
     margin: 6em auto 3em;
   }
+}
+
+.main__section__box--description #greetings {
+  background-color: #fff;
 }
 
 .main__section .arrowDown {
@@ -516,6 +524,8 @@ footer .footer__section--social a {
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 footer .footer__section--social a:hover {

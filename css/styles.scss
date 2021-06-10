@@ -211,6 +211,26 @@ section {
 				@media (max-width: $screen-md) {
 					margin: 6em auto 3em;
 				}
+
+				#greetings {
+					border-radius: 20px;
+					background-color: $white;
+					// box-shadow: -5px 8px 5px 0px $off-white;
+					padding-left: 15px;
+					margin-left: -1em;
+					color: $dark-gray;
+					font-style: italic;
+					font-weight: 500;
+					font-size: 1.2em;
+					// max-width: 83%;
+
+					#text {
+						position: relative;
+						left: -30px;
+						// opacity: 0;
+					}
+					
+				} 
 			}
 		}
 		

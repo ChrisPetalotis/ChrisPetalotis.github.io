@@ -225,6 +225,10 @@ section h3 {
   }
 }
 
+.main__section__box--description #greetings {
+  background-color: #fff;
+}
+
 .main__section .arrowDown {
   margin-bottom: 2em;
 }
