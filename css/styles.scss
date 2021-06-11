@@ -147,19 +147,19 @@ section {
 		box-shadow: 8px 20px 35px -25px rgba(0, 0, 0, 1);
 		// background-color: $black;
 		
-		#soon-msg {
-			background-color: rgba(256, 256, 256, 0.75);
-			color: $black;
-			border-radius: 20px;
-			margin: 0 auto;
-			padding: .3em 1.4em;
-			position: relative;
-			top: 3em;
+		// #soon-msg {
+		// 	background-color: rgba(256, 256, 256, 0.75);
+		// 	color: $black;
+		// 	border-radius: 20px;
+		// 	margin: 0 auto;
+		// 	padding: .3em 1.4em;
+		// 	position: relative;
+		// 	top: 3em;
 
-			@media (max-width: $screen-sm) {
-				font-size: 80%;
-			}
-		}
+		// 	@media (max-width: $screen-sm) {
+		// 		font-size: 80%;
+		// 	}
+		// }
 
 		&__box {
 			width: 65%;
