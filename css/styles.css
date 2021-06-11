@@ -589,7 +589,6 @@ footer .footer__section__column--body [title="Email"] {
 }
 
 #arrow-to-top {
-  display: none;
   position: fixed;
   width: 3.41428571em;
   height: 3.41428571em;
@@ -619,7 +618,7 @@ footer .footer__section__column--body [title="Email"] {
   }
 }
 
-#arrow-to-top .fa {
+#arrow-to-top .fas {
   color: #1A1D20;
   position: relative;
   bottom: 17.4px;
@@ -629,7 +628,7 @@ footer .footer__section__column--body [title="Email"] {
 }
 
 @media (max-width: 768px) {
-  #arrow-to-top .fa {
+  #arrow-to-top .fas {
     right: 0.27em;
     bottom: 0.7em;
   }

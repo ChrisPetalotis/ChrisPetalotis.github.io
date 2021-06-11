@@ -589,7 +589,7 @@ footer {
 }
 
 #arrow-to-top {
-	display: none;
+	// display: none;
 	position: fixed;
 	width: 3.41428571em;
 	height: 3.41428571em;
@@ -614,7 +614,7 @@ footer {
 		height: 2.91428571em;
 		// right: 2.5em;
 	}
-	.fa {
+	.fas {
 		color: $dark-gray;
 		position: relative;
 		bottom: 17.4px;

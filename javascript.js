@@ -15,11 +15,15 @@ $(document).ready(function () {
 
 
 function showArrowToTop() {
+	console.log('scorilling', $(document).scrollTop());
+	
 	// When the user scrolls down 450px from the top of the document, show the scroll-to-top-button
-	if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450)
-		document.getElementById("arrow-to-top").classList.add('active');
-	else 
-		document.getElementById("arrow-to-top").classList.remove('active');
+	if ($(document).scrollTop() > 450) {
+		$("#arrow-to-top").addClass('active');
+	}
+	else {
+		$("#arrow-to-top").removeClass('active');
+	}
 	
 	$(".arrowDown").css("opacity", 1 - $(window).scrollTop() / 5000);
 }
