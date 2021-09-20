@@ -146,22 +146,6 @@ section h3 {
           box-shadow: 8px 20px 35px -25px black;
 }
 
-.main__section #soon-msg {
-  background-color: rgba(255, 255, 255, 0.75);
-  color: #000;
-  border-radius: 20px;
-  margin: 0 auto;
-  padding: .3em 1.4em;
-  position: relative;
-  top: 3em;
-}
-
-@media (max-width: 576px) {
-  .main__section #soon-msg {
-    font-size: 80%;
-  }
-}
-
 .main__section__box {
   width: 65%;
   margin: 0 auto;
