@@ -159,11 +159,15 @@ section h3 {
 }
 
 .main__section__box--prof-pic {
-  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 30em;
   height: 30em;
-  overflow: hidden;
-  margin: 9em auto;
+  margin: 9em 2em;
 }
 
 @media (max-width: 1100px) {
@@ -176,14 +180,14 @@ section h3 {
 @media (max-width: 767px) {
   .main__section__box--prof-pic {
     width: 20em;
-    height: 20em;
-    margin: 6.5em auto 0;
+    margin: 3.5em auto 0;
   }
 }
 
 .main__section__box--prof-pic img {
   width: auto;
   height: 100%;
+  border-radius: 6%;
 }
 
 .main__section__box--description {
@@ -207,7 +211,7 @@ section h3 {
 
 @media (max-width: 768px) {
   .main__section__box--description {
-    margin: 6em auto 3em;
+    margin: 3em auto;
   }
 }
 
