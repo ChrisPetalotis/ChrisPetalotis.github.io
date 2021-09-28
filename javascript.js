@@ -15,8 +15,6 @@ $(document).ready(function () {
 
 
 function showArrowToTop() {
-	console.log('scorilling', $(document).scrollTop());
-	
 	// When the user scrolls down 450px from the top of the document, show the scroll-to-top-button
 	if ($(document).scrollTop() > 450) {
 		$("#arrow-to-top").addClass('active');
