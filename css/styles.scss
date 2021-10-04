@@ -17,6 +17,10 @@ $gray: #D5D5D5;
 $dark-gray: #1A1D20;
 $blue: #1544c0;
 
+* {
+	// box-sizing: border-box;
+}
+
 body, html {
 	margin: 0;
 	padding: 0;
