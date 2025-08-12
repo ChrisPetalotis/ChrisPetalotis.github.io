@@ -4,23 +4,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#2E2E2E">
-	<meta name="description" content="Personal website of Christos Petalotis">
+	<meta name="theme-color" content="#2563eb">
+	<meta name="description" content="Personal website of Christos Petalotis - Senior Software Developer at Ericsson">
 	<title>Christos Petalotis</title>
 
 	<link rel="shortcut icon" type="image"
 		href="https://images.squarespace-cdn.com/content/v1/54ee0564e4b0dc9e9fc17cf1/1515433613825-2LEDN9I2PMUJD8LFLM1W/ke17ZwdGBToddI8pDm48kJycfsYb1urLU93EpFqOTQmoCXeSvxnTEQmG4uwOsdIceAoHiyRoc52GMN5_2H8Wp7zww8OjRrqjaM7_0x6HDLp42EP6IAa5vAmscK3sHI4MkNL5tmfZ3otlI9yi1IzH2Q/favicon.ico?format=">
 
 	<!-- STYLES -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="preconnect prefetch">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 	<link rel="stylesheet" href="css/styles.css">
-
-	<!-- Jqeury -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- Google Analytics - Google Tag Manager-->
 	<script async>(function (w, d, s, l, i) {
@@ -51,356 +44,306 @@
 			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
-	<head>
-		<title>Personal Website of Christos Petalotis</title>
-	</head>
-	<div class="container-fluid">
+	<!-- Navigation -->
+	<nav class="navbar" id="navbar">
+		<div class="navbar-container">
+			<a class="navbar-brand" href="#home">Christos Petalotis</a>
+			
+			<button class="navbar-toggler" id="navbar-toggler">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="navbar-collapse" id="navbar-collapse">
+				<ul class="navbar-nav">
+					<li><a class="nav-link" href="#about">About</a></li>
+					<li><a class="nav-link" href="#skills">Skills</a></li>
+					<li><a class="nav-link" href="#certifications">Achievements</a></li>
+					<!-- <li><a class="nav-link" href="blog-page.html">Blog</a></li> -->
+					<li><a class="nav-link" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-		<!-- MAIN PART -->
-		<div class="main">
-			<div class="landing_page">
-				<nav class="navbar navbar-expand-lg fadeIn-down">
-					<a class="navbar-brand" href="index.html">Christos Petalotis</a>
-
-					<button class="navbar-toggler ml-auto float-xs-right" type="button" data-toggle="collapse"
-						data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false"
-						aria-label="Toggle navigation" styles="color: white;">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navigation">
-						<ul class="navbar-nav ml-auto">
-							<!-- <li class="nav-item"> -->
-							<!-- <a class="nav-link" href="#">Career</a> -->
-							<!-- </li> -->
-							<li class="nav-item">
-								<a class="nav-link" href="#certifications">Achievements</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="blog-page.html">Blog</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#contact">Contact</a>
-							</li>
-						</ul>
+	<!-- Hero Section -->
+	<section class="hero" id="home">
+		<div class="container">
+			<div class="hero-content">
+				<div class="hero-text fade-in-up">
+					<h1>Hi there<br>I am Christos</h1>
+					<div class="subtitle">
+						Senior Software Developer, award-winning researcher, & guy who loves solving complex problems.</div>
+					<div class="description">
+						Currently leading a team of 9 at Ericsson in Madrid.
 					</div>
-				</nav>
-				<div class="main__section">
-
-					<!-- no-gutters here prevents creating horizontal overflow on the whole page -->
-					<div class="row no-gutters">
-
-						<div class="col-12">
-							<div class="main__section__box">
-								<div class="row">
-									<div class="col-12 col-md-6">
-										<div class="main__section__box--prof-pic">
-											<img src="images/me.webp" alt="profile picture">
-										</div>
-									</div>
-
-									<div class="col-xs-12 col-md-6">
-										<div class="main__section__box--description">
-											<div id="greeting">Hey there!</div>
-											I'm Christos. I'm a Master's CompSci student living in Madrid, Spain 🇪🇸.
-											<p>
-												In this page you can learn about me and the things that movitate and excite me. You will also
-												find a quick summary of my
-												competencies and what tools and technologies I use for my daily work tasks.
-											</p>
-											Hope you like it.
-										</div>
-									</div>
-
-								</div>
-							</div>
-
-							<div class="arrowDown fadeIn">
-								<svg aria-hidden="true" data-prefix="far" data-icon="angle-down" role="img"
-									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
-									class="svg-inline--fa fa-angle-down 	fa-w-10 fa-3x">
-									<path fill="currentColor"
-										d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"
-										class="arrowDown">
-									</path>
-								</svg>
-							</div>
-						</div>
-					</div>
+				</div>
+				<div class="hero-image fade-in-up">
+					<img src="images/profile_pic.png" alt="Christos Petalotis">
 				</div>
 			</div>
 		</div>
+	</section>
 
-		<!-- ABOUT ME -->
-		<section class="about-me">
-			<div class="about-me__section">
-				<h3>Get to know me...</h3>
+	<!-- About Section -->
+	<section class="section" id="about">
+		<div class="container">
+			<div class="section-title">
+				<h2>About Me</h2>
+				<p>Get to know me a little better</p>
+			</div>
+			<div class="about-content">
+				<p>
+					I am a Senior Software Developer at Ericsson in Madrid, Spain, where I lead a team of 9 developers working on
+					the company's most significant project to date. I hold a Master's degree in Computer Science, specializing in
+					Software Engineering and Green IT from the University of Amsterdam (UvA) and the Vrije University Amsterdam
+					(VU), graduating with Cum Laude honors.
+				</p>
+				<p>
+					I am a self-taught developer with multiple years of industry experience and expertise in cloud computing and a
+					wide array of technologies. My journey began with an insatiable curiosity for all things tech-related, leading
+					me to explore the vast world of programming and software development.
+				</p>
+				<p>
+					Currently, I focus on building scalable Python applications deployed on Kubernetes using Helm charts, while
+					driving pre-sales activities to understand customer needs and deliver tailored solutions. I specialize in
+					building scalable and efficient solutions in the cloud, using cutting-edge tools like AWS, Python, JavaScript,
+					Kubernetes, Docker, and Terraform.
+				</p>
+			</div>
+		</div>
+	</section>
 
-				<div class="row">
-					<div class="col-12">
-
-						<div class="about-me__section__description">
-							<!-- <div class="row"> -->
-							<div class="about-me__section__description--text">
-								<p>
-									I am a Master's student in Computer Science, specialising on Software Engineering and Green IT. This
-									is a joint program provided by the <a href="https://www.uva.nl/en">University of Amsterdam</a> (UvA)
-									and the <a href="https://vu.nl/en">Vrije University Amsterdam</a> (VU). Currently, I live in Madrid,
-									Spain, conducting my thesis project.
-								</p>
-								<p>
-									I am a self-taught developer with multiple years of industry experience and expertise in cloud
-									computing and a wide array of technologies.
-								</p>
-								<p>
-									My journey began with an insatiable curiosity for all
-									things tech-related, leading me to explore the vast world of programming and software development. I
-									have created various projects, including web applications, mobile applications and scirpts.
-								</p>
-								<p>I focus on building scalable and efficient solutions in the cloud, using cutting-edge tools like AWS,
-									Python, JavaScript, YAML, and Docker. </p>
-								<p> I love creating stuff, solving complicated problems, and fixing every single bug I come across.</p>
-							</div>
-							<!-- Cloud-based services are my go-to; I like to use AWS to build high-performance, durable and cost-effective applications. Also, I like coffee - like lots of it. -->
-						</div>
+	<!-- Skills Section -->
+	<section class="section" id="skills">
+		<div class="container">
+			<div class="section-title">
+				<h2>Skills & Expertise</h2>
+				<p>Technologies and tools I work with daily</p>
+			</div>
+			<div class="skills-grid">
+				<div class="skill-card">
+					<div class="icon">
+						<i class="fas fa-code"></i>
 					</div>
+					<h3>Development</h3>
+					<p>Building robust applications with Python, JavaScript, Java, and SQL. Creating fast, secure, and scalable
+						solutions.</p>
+				</div>
+				<div class="skill-card">
+					<div class="icon">
+						<i class="fas fa-cloud"></i>
+					</div>
+					<h3>Cloud & DevOps</h3>
+					<p>Utilizing AWS, GCP, Kubernetes, and Docker to implement cloud infrastructures and build highly-scalable
+						applications.</p>
+				</div>
+				<div class="skill-card">
+					<div class="icon">
+						<i class="fas fa-users"></i>
+					</div>
+					<h3>Leadership</h3>
+					<p>Leading development teams, mentoring developers, and driving technical strategy. 5+ years of industry
+						experience.</p>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="tech">
-			<!-- Move it outside the about me section so that it can have its own width -->
-			<h3 style="text-align: center; margin-top: 1.5em; letter-spacing: 0.2em;">Skills & Tools</h3>
-			<div class="tech__components">
-
-				<div style="padding-top: 1.3em" class="tech__components--component">
-					<div style="margin-bottom: 1em;" class="tech__components--component--icon">
-						<i style="font-size: 3.5em;" class="fa fa-server"></i>
-					</div>
-					<h4>Custom server logic</h4>
-					<div class="tech__components--component--text">
-						Development of fast, secure and robust REST APIs using: <span class="stand-out">Node.js</span>,
-						<span class="stand-out">Python</span>, <span class="stand-out">SQL</span>, <span
-							class="stand-out">Terraform</span>
-					</div>
-				</div>
-
-				<div class="tech__components--component">
-					<div class="tech__components--component--icon">
-						<i class="material-icons">cloud</i>
-					</div>
-					<h4>Build on the cloud</h4>
-					<div class="tech__components--component--text">
-						Utilization of <span class="stand-out">AWS</span> and <span class="stand-out">GCP</span> services to
-						implement cloud infrastructures and build highly-scalable, cost-effective applications
-					</div>
-				</div>
-
-				<div class="tech__components--component">
-					<div class="tech__components--component--icon">
-						<i class="material-icons">web</i>
-					</div>
-					<h4>Expertise</h4>
-					<div class="tech__components--component--text">
-						Certified by AWS, GCP, and <br> 3-years of industry experience developing web applications
-					</div>
-				</div>
-
+	<!-- Certifications Section -->
+	<section class="section" id="certifications">
+		<div class="container">
+			<div class="section-title">
+				<h2>Certifications & Achievements</h2>
+				<p>Professional certifications and notable accomplishments</p>
 			</div>
-		</section>
-
-		<section class="certifications" id="certifications">
-			<h2 style="text-align:center;">Checkout my cerifications</h2>
-
-			<div class="certifications__section">
-				<div class="row">
-					<!-- <div class="col-12"> -->
-					<div class="col-12 col-sm-6 certifications__section--left">
-						<h3>Cloud Certifications</h3>
-
-						<a href="https://www.credly.com/badges/4249054b-f14c-4fe2-9c4e-0edae1c9676b/public_url" target="_blank">
-
-							<div class="certifications__section--left--item">
-								<div class="row">
-									<div class="col-12 col-lg-3 badge">
-										<img
-											src="https://images.credly.com/size/220x220/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
-											alt="">
-									</div>
-									<span class="col-12 col-lg-8 offset-lg-1 cert_description">
-										<span class="provider">AWS</span>: Solutions Architect - Associate
-									</span>
-								</div>
-							</div>
-						</a>
-
-						<a href="https://www.credly.com/badges/d17f2943-5618-4506-9f46-c2e3f5c97c85/public_url" target="_blank">
-							<div class="certifications__section--left--item">
-								<div class="row">
-									<div class="col-12 col-lg-3 badge">
-										<img
-											src="https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
-											alt="">
-									</div>
-									<div class="col-12 col-lg-8 offset-lg-1 cert_description">
-										<span class="provider">AWS</span>: Cloud Practitioner
-									</div>
-								</div>
-							</div>
-						</a>
-
-						<a href="https://www.credential.net/3a2a50f7-f2cb-418f-b693-412576489bc4" target="_blank">
-							<div class="certifications__section--left--item">
-								<div class="row">
-									<div class="col-12 col-lg-3 badge">
-										<img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/20960755"
-											alt="">
-									</div>
-									<div class="col-12 col-lg-8 offset-lg-1 cert_description">
-										<span class="provider">GCP</span>: Associate Cloud Engineer
-									</div>
-								</div>
-							</div>
-						</a>
-
+			<div class="certifications-grid">
+				<!-- VERSEN Award -->
+				<div class="certification-card">
+					<div style="background: #fff; border-radius: 8px; padding: 0.5rem; display: inline-block;">
+						<img src="https://www.versen.nl/assets/img/news/VERSEN-logo.png" alt="VERSEN Award"
+							style="background: #fff; border-radius: 8px; display: block; width: inherit;">
 					</div>
-
-					<div class="col-12 col-sm-6 certifications__section--right">
-						<h3>Other Certifications</h3>
-						<a href="https://www.freecodecamp.org/certification/chrispetalotis/scientific-computing-with-python-v7"
-							target="_blank">
-
-							<div class="certifications__section--right--item">
-								<div class="row">
-									<div class="col-12 col-lg-3 badge">
-										<img src="./images/scientific-computing-with-python.png" alt="">
-									</div>
-									<div class="col-12 col-lg-8 offset-lg-1 cert_description">
-										<span class="provider">freeCodeCamp</span>: Scientific Computing with Python
-									</div>
-								</div>
-							</div>
-						</a>
-
-						<a href="https://www.freecodecamp.org/certification/chrispetalotis/javascript-algorithms-and-data-structures"
-							target="_blank">
-							<div class="certifications__section--right--item">
-								<div class="row">
-									<div class="col-12 col-lg-3 badge">
-										<img src="./images/js-algorithms-and-data-structures.png" alt="">
-									</div>
-									<div class="col-12 col-lg-8 offset-lg-1 cert_description">
-										<span class="provider">freeCodeCamp</span>: JavaScript Algorithms and Data Structures
-									</div>
-								</div>
-							</div>
-						</a>
-
-						<a href="https://www.freecodecamp.org/certification/chrispetalotis/responsive-web-design" target="_blank">
-							<div class="certifications__section--right--item">
-								<div class="row">
-									<div class="col-12 col-lg-3 badge">
-										<img src="./images/responsive-web-design-certificate-fcc.png" alt="">
-									</div>
-									<div class="col-12 col-lg-8 offset-lg-1 cert_description">
-										<span class="provider">freeCodeCamp</span>: Responsive Web Desgin
-									</div>
-								</div>
-							</div>
-						</a>
+					<div class="certification-info">
+						<h4>Best Master Thesis in the Netherlands 2023</h4>
+						<div class="provider">VERSEN</div>
+						<p>Awarded for outstanding research in software engineering</p>
 					</div>
+				</div>
 
-					<!-- </div> -->
+				<!-- AWS Solutions Architect -->
+				<a href="https://www.credly.com/badges/4249054b-f14c-4fe2-9c4e-0edae1c9676b/public_url" target="_blank"
+					class="certification-card">
+					<img src="https://images.credly.com/size/220x220/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
+						alt="AWS Solutions Architect">
+					<div class="certification-info">
+						<h4>Solutions Architect - Associate</h4>
+						<div class="provider">AWS</div>
+						<p>Cloud architecture and design expertise</p>
+					</div>
+				</a>
+
+				<!-- AWS Cloud Practitioner -->
+				<a href="https://www.credly.com/badges/d17f2943-5618-4506-9f46-c2e3f5c97c85/public_url" target="_blank"
+					class="certification-card">
+					<img src="https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+						alt="AWS Cloud Practitioner">
+					<div class="certification-info">
+						<h4>Cloud Practitioner</h4>
+						<div class="provider">AWS</div>
+						<p>Fundamental AWS cloud concepts</p>
+					</div>
+				</a>
+
+				<!-- GCP Associate Cloud Engineer -->
+				<a href="https://www.credential.net/3a2a50f7-f2cb-418f-b693-412576489bc4" target="_blank"
+					class="certification-card">
+					<img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/20960755"
+						alt="GCP Associate Cloud Engineer">
+					<div class="certification-info">
+						<h4>Associate Cloud Engineer</h4>
+						<div class="provider">GCP</div>
+						<p>Google Cloud Platform expertise</p>
+					</div>
+				</a>
+
+				<!-- freeCodeCamp Scientific Computing -->
+				<!-- <a href="https://www.freecodecamp.org/certification/chrispetalotis/scientific-computing-with-python-v7"
+					target="_blank" class="certification-card">
+					<img src="./images/scientific-computing-with-python.png" alt="freeCodeCamp Scientific Computing">
+					<div class="certification-info">
+						<h4>Scientific Computing with Python</h4>
+						<div class="provider">freeCodeCamp</div>
+						<p>Advanced Python programming skills</p>
+					</div>
+				</a> -->
+
+				<!-- freeCodeCamp JavaScript -->
+				<!-- <a href="https://www.freecodecamp.org/certification/chrispetalotis/javascript-algorithms-and-data-structures"
+					target="_blank" class="certification-card">
+					<img src="./images/js-algorithms-and-data-structures.png" alt="freeCodeCamp JavaScript">
+					<div class="certification-info">
+						<h4>JavaScript Algorithms and Data Structures</h4>
+						<div class="provider">freeCodeCamp</div>
+						<p>Advanced JavaScript programming</p>
+					</div>
+				</a> -->
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section class="section" id="contact">
+		<div class="container">
+			<div class="contact-section">
+				<div class="section-title">
+					<h2>Let's Connect</h2>
+					<p>Feel free to reach out for collaborations, opportunities, or just to say hello</p>
+				</div>
+				<div class="contact-grid">
+					<div class="contact-item">
+						<h4>
+							<i class="fas fa-envelope icon"></i>
+							Email
+						</h4>
+						<a href="mailto:chris.petalotis@gmail.com">chris.petalotis@gmail.com</a>
+					</div>
+					<div class="contact-item">
+						<h4>
+							<i class="fas fa-calendar icon"></i>
+							Schedule a Meeting
+						</h4>
+						<a href="https://calendly.com/christos-petalotis" target="_blank">Check my availability</a>
+					</div>
+					<div class="contact-item">
+						<h4>
+							<i class="fas fa-map-marker-alt icon"></i>
+							Location
+						</h4>
+						<p>Madrid, Spain 🇪🇸</p>
+					</div>
+				</div>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/christos-petalotis-949934ba/" target="_blank" aria-label="LinkedIn">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="https://github.com/ChrisPetalotis" target="_blank" aria-label="GitHub">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://twitter.com/ChrisPetalotis" target="_blank" aria-label="Twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<!-- <a href="https://www.youtube.com/channel/UCG1Ly8_ew6qQtp5bAg8bZzQ" target="_blank" aria-label="YouTube">
+						<i class="fab fa-youtube"></i>
+					</a> -->
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<footer id="contact">
-			<div class="footer__section">
-				<div class="row no-margin">
-					<div class="col-12">
-						<div class="row no-margin">
-							<div class="footer__section__column col-12 col-md-6 col-lg-4">
-								<div class="footer__section__column--title">
-									<h3>You can connect with me at the following places:</h3>
-								</div>
-								<div class="footer__section__column--body">
-									<div class="footer__section__column--body--social">
-										<div class="row">
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; <span id="current-year"></span> Christos Petalotis. Crafted with passion, pixels, and pure creative
+				magic.</p>
+			<script>
+				document.getElementById('current-year').textContent = new Date().getFullYear();
+			</script>
+		</div>
+	</footer>
 
-											<!-- Twitter -->
-											<div class="col-auto">
-												<a href="https://twitter.com/ChrisPetalotis" data-toggle="tooltip" title="Twitter"
-													target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-											</div>
+	<!-- JavaScript -->
+	<script src="javascript.js"></script>
+	<script>
+		// Navbar scroll effect
+		window.addEventListener('scroll', function () {
+			const navbar = document.getElementById('navbar');
+			if (window.scrollY > 50) {
+				navbar.classList.add('scrolled');
+			} else {
+				navbar.classList.remove('scrolled');
+			}
+		});
 
-											<!-- LinkedIn -->
-											<div class="col-auto">
-												<a href="https://www.linkedin.com/in/christos-petalotis-949934ba/" data-toggle="tooltip"
-													title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-											</div>
+		// Mobile navigation toggle
+		const navbarToggler = document.getElementById('navbar-toggler');
+		const navbarCollapse = document.getElementById('navbar-collapse');
+		const navLinks = document.querySelectorAll('.nav-link');
 
-											<!-- Github -->
-											<div class="col-auto">
-												<a href="https://github.com/ChrisPetalotis" data-toggle="tooltip" title="GitHub" target="_blank"
-													rel="noopener"><i class="fab fa-github"></i></a>
-											</div>
+		navbarToggler.addEventListener('click', function() {
+			navbarToggler.classList.toggle('active');
+			navbarCollapse.classList.toggle('show');
+		});
 
-											<!-- YouTube -->
-											<div class="col-auto">
-												<a href="https://www.youtube.com/channel/UCG1Ly8_ew6qQtp5bAg8bZzQ" data-toggle="tooltip"
-													title="YouTube" target="_blank" rel="noopener"> <i class="fab fa-youtube"></i> </a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="footer__section__column col-12 col-md-6 col-lg-4">
-								<div class="footer__section__column--title" style="width:110%;">
-									<h3>If you prefer email, shoot at:</h3>
-								</div>
-								<div class="footer__section__column--body">
+		// Close mobile menu when clicking on a link
+		navLinks.forEach(link => {
+			link.addEventListener('click', function() {
+				navbarToggler.classList.remove('active');
+				navbarCollapse.classList.remove('show');
+			});
+		});
 
-									<!-- Email -->
-									<div class="col-12 col-md email-box" style="margin-left: 14px;">
-										<span>
-											<i class="fas fa-envelope"></i>
-											<a href="https://mail.google.com/mail/?view=cm&fs=1&to=chris.petalotis@gmail.com"
-												data-toggle="tooltip" title="Email" target="_blank" rel="noopener">chris.petalotis@gmail.com
-											</a>
-										</span>
-									</div>
-								</div>
+		// Close mobile menu when clicking outside
+		document.addEventListener('click', function(e) {
+			if (!navbarToggler.contains(e.target) && !navbarCollapse.contains(e.target)) {
+				navbarToggler.classList.remove('active');
+				navbarCollapse.classList.remove('show');
+			}
+		});
 
-							</div>
-							<div class="footer__section__column col-12 col-md-12 col-lg-4 meeting">
-								<div class="footer__section__column--title">
-									<h3>Online meeting? Check my availability right <a
-											href="https://calendly.com/christos-petalotis">here</a></h3>
-								</div>
-								<div class="footer__section__column--body">
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- Arrow navigating to the top of the page -->
-		<button data-scroll-class='100vh:active' id="arrow-to-top" name='go to top'><i class="fas fa-angle-up"></i></button>
-
-	</div>
-
-	<!-- Bootstrap JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-	<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-	<!-- Custom JS -->
-	<script src="javascript.js" rel='preconnect'></script>
+		// Smooth scrolling for navigation links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>
