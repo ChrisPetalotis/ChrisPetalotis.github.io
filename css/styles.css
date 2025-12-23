@@ -15,7 +15,7 @@ body {
 		sans-serif;
 	line-height: 1.6;
 	color: #e2e8f0;
-	background-color: #0d1117;
+	background-color: #000000;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -257,7 +257,7 @@ a:hover {
 	display: flex;
 	align-items: center;
 	padding: 8rem 0 4rem;
-	background: #0d1117;
+	background: #000000;
 	position: relative;
 	overflow: hidden;
 }
@@ -316,7 +316,7 @@ a:hover {
 	right: 0;
 	bottom: 0;
 	width: 40%;
-	background: linear-gradient(to right, transparent, #0d1117);
+	background: linear-gradient(to right, transparent, #000000);
 	pointer-events: none;
 	z-index: 2;
 }
@@ -344,7 +344,7 @@ a:hover {
 /* Sections */
 .section {
 	padding: 6rem 0;
-	background: #0d1117;
+	background: #000000;
 }
 
 .section-title {
@@ -387,6 +387,80 @@ a:hover {
 	margin-bottom: 2rem;
 	color: #e2e8f0;
 	font-weight: 400;
+}
+
+/* Current Venture Section */
+.venture-content {
+	margin-top: 3rem;
+}
+
+.venture-card {
+	background: transparent;
+	padding: 3rem;
+	border-radius: 8px;
+	border: 1px solid #374151;
+	transition: all 0.2s ease;
+}
+
+.venture-card:hover {
+	border-color: #60a5fa;
+	background: rgba(96, 165, 250, 0.02);
+}
+
+.venture-card h3 {
+	font-size: 2rem;
+	color: #ffffff;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+}
+
+.venture-tagline {
+	font-size: 1.3rem;
+	color: #60a5fa;
+	margin-bottom: 2rem;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.venture-card p {
+	font-size: 1.1rem;
+	line-height: 1.8;
+	margin-bottom: 1.5rem;
+	color: #e2e8f0;
+	font-weight: 400;
+}
+
+.venture-highlights {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	margin-top: 2rem;
+	padding-top: 2rem;
+	border-top: 1px solid #374151;
+}
+
+.highlight-item {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.75rem 1.25rem;
+	background: rgba(96, 165, 250, 0.05);
+	border: 1px solid rgba(96, 165, 250, 0.2);
+	border-radius: 6px;
+	color: #e2e8f0;
+	font-size: 0.95rem;
+	font-weight: 500;
+	transition: all 0.2s ease;
+}
+
+.highlight-item:hover {
+	background: rgba(96, 165, 250, 0.1);
+	border-color: rgba(96, 165, 250, 0.4);
+}
+
+.highlight-item i {
+	color: #60a5fa;
+	font-size: 1.1rem;
 }
 
 /* Skills Section */
@@ -576,7 +650,7 @@ a:hover {
 
 /* Footer */
 .footer {
-	background: #0d1117;
+	background: #000000;
 	color: #ffffff;
 	padding: 3rem 0;
 	text-align: center;
@@ -606,6 +680,15 @@ a:hover {
 	}
 
 	.navbar-nav {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.venture-card {
+		padding: 2rem 1.5rem;
+	}
+
+	.venture-highlights {
 		flex-direction: column;
 		gap: 1rem;
 	}
@@ -673,7 +756,7 @@ button:focus {
 }
 
 ::-webkit-scrollbar-track {
-	background: #0d1117;
+	background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
