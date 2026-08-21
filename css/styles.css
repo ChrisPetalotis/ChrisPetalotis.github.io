@@ -650,19 +650,36 @@ a:hover {
 	background: var(--surface-strong);
 }
 
-.certification-mark {
+.certification-card img {
+	width: 60px;
+	min-width: 60px;
+	height: 60px;
+	border-radius: 12px;
+	object-fit: contain;
+	background: rgba(250, 247, 242, 0.96);
+	padding: 0.35rem;
+}
+
+.certification-logo-shell {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	width: 72px;
 	min-width: 72px;
-	height: 44px;
-	border-radius: 8px;
+	height: 60px;
+	border-radius: 12px;
 	border: 1px solid var(--hairline);
-	color: var(--muted-strong);
-	font-size: 0.75rem;
-	font-weight: 700;
-	letter-spacing: 0.08em;
+	background: rgba(250, 247, 242, 0.96);
+	padding: 0.4rem;
+}
+
+.certification-logo-shell img {
+	width: 100%;
+	min-width: 0;
+	height: auto;
+	padding: 0;
+	background: transparent;
+	border-radius: 0;
 }
 
 .certification-info h4 {
