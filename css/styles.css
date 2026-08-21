@@ -1,24 +1,26 @@
-/* Modern minimal design inspired by ElevenLabs' warm editorial marketing surfaces. */
+/* Modern minimal dark design inspired by ElevenLabs' editorial marketing surfaces. */
 
 /* Import modern fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 :root {
-	--canvas: #f5f3ef;
-	--surface: rgba(255, 252, 247, 0.78);
-	--surface-strong: #fffaf4;
-	--ink: #292524;
-	--ink-deep: #0c0a09;
-	--muted: #777169;
-	--muted-strong: #57534e;
-	--hairline: rgba(41, 37, 36, 0.1);
-	--hairline-strong: rgba(41, 37, 36, 0.16);
-	--mint: rgba(167, 229, 211, 0.6);
-	--peach: rgba(244, 197, 168, 0.65);
-	--lavender: rgba(200, 184, 224, 0.56);
-	--sky: rgba(168, 200, 232, 0.52);
-	--rose: rgba(232, 184, 196, 0.48);
-	--shadow-soft: inset 0 0 0 1px rgba(41, 37, 36, 0.07), 0 20px 60px rgba(78, 50, 23, 0.08);
+	--canvas: #070707;
+	--surface: rgba(28, 25, 23, 0.78);
+	--surface-strong: #211f1d;
+	--ink: #faf7f2;
+	--ink-deep: #ffffff;
+	--action: #faf7f2;
+	--on-action: #0c0a09;
+	--muted: #a8a29e;
+	--muted-strong: #d6d3d1;
+	--hairline: rgba(250, 247, 242, 0.11);
+	--hairline-strong: rgba(250, 247, 242, 0.2);
+	--mint: rgba(87, 151, 131, 0.34);
+	--peach: rgba(180, 103, 70, 0.32);
+	--lavender: rgba(126, 100, 168, 0.3);
+	--sky: rgba(81, 121, 164, 0.3);
+	--rose: rgba(160, 84, 104, 0.26);
+	--shadow-soft: inset 0 0 0 1px rgba(250, 247, 242, 0.06), 0 20px 70px rgba(0, 0, 0, 0.4);
 }
 
 /* CSS Reset and Base Styles */
@@ -103,7 +105,7 @@ a:hover {
 }
 
 .navbar.scrolled {
-	background: rgba(245, 243, 239, 0.82);
+	background: rgba(7, 7, 7, 0.82);
 	backdrop-filter: blur(18px);
 	border-bottom: 1px solid var(--hairline);
 	padding: 0.85rem 0;
@@ -185,10 +187,10 @@ a:hover {
 	list-style: none;
 	gap: 0.35rem;
 	padding: 0.35rem;
-	background: rgba(255, 252, 247, 0.7);
+	background: rgba(28, 25, 23, 0.72);
 	border: 1px solid var(--hairline);
 	border-radius: 999px;
-	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+	box-shadow: inset 0 0 0 1px rgba(250, 247, 242, 0.04);
 }
 
 .nav-link {
@@ -203,7 +205,7 @@ a:hover {
 
 .nav-link:hover {
 	color: var(--ink);
-	background: rgba(41, 37, 36, 0.06);
+	background: rgba(250, 247, 242, 0.08);
 }
 
 .nav-link.active {
@@ -226,7 +228,7 @@ a:hover {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(245, 243, 239, 0.96);
+		background: rgba(7, 7, 7, 0.96);
 		backdrop-filter: blur(18px);
 		display: flex;
 		align-items: center;
@@ -264,7 +266,7 @@ a:hover {
 
 	.nav-link:hover,
 	.nav-link.active {
-		background: rgba(41, 37, 36, 0.06);
+		background: rgba(250, 247, 242, 0.08);
 		color: var(--ink);
 		border-radius: 999px;
 		padding: 1rem 2rem;
@@ -299,7 +301,10 @@ a:hover {
 }
 
 .hero-content {
-	max-width: 860px;
+	display: grid;
+	grid-template-columns: minmax(0, 860px) auto;
+	gap: 4rem;
+	max-width: 1080px;
 	align-items: center;
 	position: relative;
 	z-index: 2;
@@ -374,33 +379,50 @@ a:hover {
 	min-height: 42px;
 	padding: 0.65rem 1.1rem;
 	transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
-	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+	box-shadow: inset 0 0 0 1px rgba(250, 247, 242, 0.1);
 }
 
 .button-primary {
-	background: var(--ink);
-	border: 1px solid var(--ink);
-	color: #ffffff;
+	background: var(--action);
+	border: 1px solid var(--action);
+	color: var(--on-action);
 }
 
 .button-primary:hover {
 	background: var(--ink-deep);
 	border-color: var(--ink-deep);
-	color: #ffffff;
+	color: var(--on-action);
 	transform: translateY(-1px);
 }
 
 .button-secondary {
 	border: 1px solid var(--hairline-strong);
 	color: var(--ink);
-	background: rgba(255, 252, 247, 0.48);
+	background: rgba(250, 247, 242, 0.04);
 }
 
 .button-secondary:hover {
-	border-color: rgba(41, 37, 36, 0.24);
+	border-color: var(--hairline-strong);
 	color: var(--ink);
-	background: rgba(255, 252, 247, 0.8);
+	background: rgba(250, 247, 242, 0.08);
 	transform: translateY(-1px);
+}
+
+.hero-image {
+	width: 200px;
+	padding: 0.45rem;
+	border: 1px solid var(--hairline);
+	border-radius: 999px;
+	background: rgba(28, 25, 23, 0.72);
+	box-shadow: var(--shadow-soft);
+}
+
+.hero-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 999px;
+	filter: grayscale(0.1) contrast(1.05);
 }
 
 /* Sections */
@@ -509,7 +531,7 @@ a:hover {
 	display: flex;
 	align-items: center;
 	padding: 0.75rem 1.25rem;
-	background: rgba(255, 252, 247, 0.65);
+	background: rgba(28, 25, 23, 0.65);
 	border: 1px solid var(--hairline);
 	border-radius: 999px;
 	color: var(--ink);
@@ -519,7 +541,7 @@ a:hover {
 }
 
 .highlight-item:hover {
-	background: rgba(255, 252, 247, 0.92);
+	background: rgba(33, 31, 29, 0.92);
 	border-color: var(--hairline-strong);
 }
 
@@ -535,7 +557,7 @@ a:hover {
 	border-radius: 16px;
 	padding: 1.5rem;
 	background: var(--surface);
-	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+	box-shadow: inset 0 0 0 1px rgba(250, 247, 242, 0.04);
 }
 
 .work-number {
@@ -620,7 +642,7 @@ a:hover {
 	align-items: center;
 	gap: 1rem;
 	color: var(--ink);
-	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+	box-shadow: inset 0 0 0 1px rgba(250, 247, 242, 0.04);
 }
 
 .certification-card:hover {
@@ -696,7 +718,7 @@ a:hover {
 	gap: 0.75rem;
 	text-align: center;
 	padding: 1.5rem;
-	background: rgba(255, 252, 247, 0.58);
+	background: rgba(28, 25, 23, 0.58);
 	border: 1px solid var(--hairline);
 	border-radius: 16px;
 	transition: all 0.2s ease;
@@ -704,7 +726,7 @@ a:hover {
 
 .contact-item:hover {
 	border-color: var(--hairline-strong);
-	background: rgba(255, 252, 247, 0.9);
+	background: rgba(33, 31, 29, 0.9);
 }
 
 .contact-item .icon {
@@ -750,7 +772,7 @@ a:hover {
 	justify-content: center;
 	width: 40px;
 	height: 40px;
-	background: rgba(255, 252, 247, 0.58);
+	background: rgba(28, 25, 23, 0.58);
 	border: 1px solid var(--hairline);
 	border-radius: 999px;
 	color: var(--muted-strong);
@@ -782,7 +804,8 @@ a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
 	.hero-content {
-		max-width: none;
+		grid-template-columns: 1fr;
+		gap: 2rem;
 	}
 
 	.hero-text h1 {
@@ -796,6 +819,11 @@ a:hover {
 
 	.hero-actions {
 		justify-content: flex-start;
+	}
+
+	.hero-image {
+		order: -1;
+		width: 160px;
 	}
 
 	.navbar-nav {
