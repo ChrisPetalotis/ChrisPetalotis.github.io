@@ -409,19 +409,19 @@ a:hover {
 }
 
 .hero-image {
-	width: 200px;
-	padding: 0.45rem;
-	border: 1px solid var(--hairline);
-	border-radius: 999px;
-	background: rgba(28, 25, 23, 0.72);
-	box-shadow: var(--shadow-soft);
+	width: 280px;
+	padding: 0;
+	border-radius: 28px;
+	background: transparent;
+	box-shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+	overflow: hidden;
 }
 
 .hero-image img {
 	display: block;
 	width: 100%;
 	height: auto;
-	border-radius: 999px;
+	border-radius: 28px;
 	filter: grayscale(0.1) contrast(1.05);
 }
 
@@ -808,7 +808,7 @@ a:hover {
 
 	.hero-image {
 		order: -1;
-		width: 160px;
+		width: 220px;
 	}
 
 	.navbar-nav {
